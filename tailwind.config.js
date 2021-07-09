@@ -8,9 +8,10 @@ module.exports = {
       }
     },
     fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
       'display': ['Dancing Script'],
       'body': ['Open Sans'],
-     }
+    }
   },
   variants: {
     extend: {},

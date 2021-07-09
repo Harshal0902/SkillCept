@@ -3,11 +3,13 @@ import './App.scss';
 import fire from "./firebase"
 import Main from "./containers/main"
 import Login from "./components/Login/Login"
+import "./i18n"
 
 const App = () => {
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confPassword, setConfPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [hasAccount, setHasAccount] = useState("");
@@ -15,6 +17,7 @@ const App = () => {
   const clearInputs = () => {
     setEmail('');
     setPassword("");
+    setConfPassword("");
   }
 
   const clearErrorss = () => {

@@ -5,25 +5,42 @@
 *{
   margin: 0;
   padding: 0;
-
-
-}
-bode{
-
-  background-color: #203864;
 }
 
-.skillcept__title , .logo{
+.font__title , .logo{
   font-family: "Dancing Script", cursive;
 }
 
-.nav__links{
+.text__font{
   font-family: 'Source Serif Pro', serif;
 }
 
 .footer_text{
   font-family: 'Vollkorn', serif;
 }
+
+// Scroll bar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+// Track
+::-webkit-scrollbar-track {
+  background: #DCE4F7;
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+  background-color: #55198b !important;
+  border-radius: 12px;
+}
+
+// Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(126, 38, 185, 0.959);
+  border-radius: 12px;
+}
+
 /* .App {
   text-align: center;
 }
