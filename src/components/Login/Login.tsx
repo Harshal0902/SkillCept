@@ -2,21 +2,23 @@ import React from 'react'
 import Study from "../../Assets/study.svg"
 
 interface Props {
-    email: any;
+    email: string;
     setEmail: any;
     password: any;
     setPassword: any;
+    confPassword: any;
     handleLogin: any;
     handleSignup: any;
     hasAccount: any;
     setHasAccount: any;
     emailError: any;
     passwordError: any;
+    lang: any;
 }
 
 const Login: React.FC<Props> = (props) => {
 
-    const { email, setEmail, password, setPassword, handleLogin, handleSignup, hasAccount, setHasAccount, emailError, passwordError } = props;
+    const { email, setEmail, password, setPassword, handleLogin, handleSignup, hasAccount, setHasAccount, confPassword, emailError, passwordError } = props;
 
     return (
         <div>
@@ -30,10 +32,8 @@ const Login: React.FC<Props> = (props) => {
                             <img src={Study} alt="img" className="w-11/12 lg:-ml-4 sm:ml-16 rounded-lg p-8" />
                         </div>
 
-                        {/* <button type="button" className="bg-blue-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-blue-600 transition duration-200 each-in-out">Primary</button> */}
-
                         <div className="md:flex md:flex-col md:justify-center mr-16">
-                            <h2 className="skillcept__title self-center text-indigo-800 text-5xl md:text-4xl lg:text-7xl font-bold mb-4 tracking-wider">
+                            <h2 className="font__title self-center text-indigo-800 text-5xl md:text-4xl lg:text-7xl font-bold mb-4 tracking-wider">
                                 SkillCept
                             </h2>
 
@@ -48,9 +48,9 @@ const Login: React.FC<Props> = (props) => {
                             <div className="btnContainer my-3">
                                 {hasAccount ? (
                                     <>
-                                        <input className="w-full border-b-2 rounded-xl pl-3 pb-2 border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 outline-none md:text-lg" type="password" placeholder="Conform Password" required value={password} onChange={(e) => setPassword(e.target.value)} style={{ marginBottom: "20px" }} />
+                                        <input className="w-full border-b-2 rounded-xl pl-3 pb-2 border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 outline-none md:text-lg mb-4" type="password" placeholder="Conform Password" value={password} required onChange={(e) => setPassword(e.target.value)} />
 
-                                        <button className="border-none text-white bg-indigo-600 w-full py-3 text-4 cursor-pointer rounded-3xl" onClick={handleSignup}>Sign In</button>
+                                        <button className="border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full py-3 text-4 cursor-pointer rounded-3xl" onClick={handleSignup}>Sign In</button>
 
 
                                         <p className="-mx-4 mt-4 text-right text-gray-700">Have an account?{" "}
@@ -58,7 +58,7 @@ const Login: React.FC<Props> = (props) => {
                                     </>
                                 ) : (
                                     <>
-                                        <button className="border-none text-white bg-indigo-600 w-full py-3 text-4 cursor-pointer rounded-3xl" onClick={handleLogin}>Sign In</button>
+                                        <button className="border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full py-3 text-4 cursor-pointer rounded-3xl" onClick={handleLogin}>Sign In</button>
 
                                         <p className="-mx-4 mt-4 text-right text-gray-700">Dont't have an account?{" "}
                                             <span className="text-gray-900 cursor-pointer" onClick={() => setHasAccount(!hasAccount)}>Sign Up</span></p>
