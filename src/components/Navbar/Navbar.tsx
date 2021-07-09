@@ -6,6 +6,7 @@ import { MenuAlt3Icon, XIcon, LogoutIcon } from '@heroicons/react/outline'
 import fire from "../../firebase"
 import "../../i18n"
 import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next'
 
 const handleLogout = () => {
     fire.auth().signOut();
@@ -18,6 +19,7 @@ const changeLang = (ln: any) => {
 };
 
 export default function Navbar() {
+    const { t } = useTranslation();
 
     return (
         <Headroom className="fixed w-full z-10">
@@ -37,11 +39,11 @@ export default function Navbar() {
                                 </div>
                                 <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-                                    <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">Home</Link>
+                                    <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkHome')}</Link>
 
-                                    <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">Class</Link>
+                                    <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkClass')}</Link>
 
-                                    <Link to='/contact' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">Contact</Link>
+                                    <Link to='/contact' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkContact')}</Link>
 
                                 </Popover.Group>
                                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -52,7 +54,7 @@ export default function Navbar() {
                                             <>
                                                 <span className="rounded-md shadow-sm">
                                                     <Menu.Button className="text__font inline-flex justify-center w-full px-2 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
-                                                        <span>Change Language</span>
+                                                        <span>{t('navChangeLang')}</span>
                                                         <svg
                                                             className="w-5 h-5 ml-2 -mr-1"
                                                             viewBox="0 0 20 20"
@@ -89,7 +91,7 @@ export default function Navbar() {
                                                         <div className="py-1">
                                                             <Menu.Item>
                                                                 <div className=" flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer" onClick={changeLang("hi")} >
-                                                                    Hindi
+                                                                हिंदी
                                                                 </div>
                                                             </Menu.Item>
                                                         </div>
@@ -172,7 +174,7 @@ export default function Navbar() {
                                         </div>
                                         <div className="mt-6">
                                             <nav className="text__font grid gap-y-8 text-white">
-                                                AR based web platform for students
+                                            {t('navSiteDetail')}
                                             </nav>
                                         </div>
                                     </div>
@@ -180,11 +182,11 @@ export default function Navbar() {
 
                                         <div className="grid place-items-center">
 
-                                            <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">Home</Link>
+                                            <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkHome')}</Link>
 
-                                            <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">Class</Link>
+                                            <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkClass')}</Link>
 
-                                            <Link to='/contact' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">Contact</Link>
+                                            <Link to='/contact' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkContact')}</Link>
 
                                         </div>
 
@@ -192,31 +194,31 @@ export default function Navbar() {
                                             <div className="w-64 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                                         </div>
 
-                                        <div className="text__font text-xl text-gray-300 hover:bg-gray-700">Change Language</div>
+                                        <div className="text__font text-xl text-gray-300 hover:bg-gray-700">{t('navChangeLang')}:</div>
 
-                                        <div className="grid grid-cols-4 gap-y-4 gap-x-4">
+                                        <div className="grid grid-cols-3 gap-y-4 gap-x-4">
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:bg-gray-700">
+                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("en")}>
                                                 English
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:bg-gray-700">
-                                                Hindi
+                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("hi")}>
+                                            हिंदी
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:bg-gray-700">
+                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("de")}>
                                                 German
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:bg-gray-700">
+                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("ru")}>
                                                 Russian
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:bg-gray-700">
+                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("fr")}>
                                                 French
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:bg-gray-700">
+                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("ja")}>
                                                 Japanese
                                             </div>
 

@@ -1,4 +1,32 @@
 {
-  "lang": "English",
-  "homeAbout": "SkillCept enables us to learn with 3D Models, which makes our understanding easier, and faster. SkillCept is an AR based web site where students from any background can visit the site and learn various concepts with the help of 3D Models, which makes our understanding easier, and faster."
+  "langName": "English",
+  "navDropLang": "English",
+
+  "navLinkHome": "Home",
+  "navLinkClass": "Class",
+  "navLinkContact": "Contact",
+  "navChangeLang": "Change Language",
+  "navSiteDetail": "AR based web platform for students",
+
+  "homeAbout": "SkillCept enables us to learn with 3D Models, which makes our understanding easier, and faster. SkillCept is an AR based web site where students from any background can visit the site and learn various concepts with the help of 3D Models, which makes our understanding easier, and faster.",
+  "homeExplore": "Explore",
+  "homeOtherFeat": "Other Features",
+  "home3D": "Interactive 3D Models",
+  "home3Ddetails": "Digital 3D models allow students to visualize and interrogate various topics; they reinforce spatial skills, facilitate student recognition of pre-learned various principles in the field, and encourage students to think about their processes and properties.",
+  "homeAR": "Learn with Argumented Reality",
+  "homeARDetails": "Argumented Reality's relative seamlessness of digital objects within the real world encourages interactivity and engagement. It maximizes students' ability to spend their time learning curricular subjects while minimizing the time spent learning how to use the new tech.",
+  "homeMultiLang": "Available in multiple languages",
+  "homeMultiLangDetails": "The platform is available in multiple languages for the creation and appreciation of cultural awareness, adds academic and educational value, enhances creativity, an adjustment in society, and appreciation of local languages.",
+
+  "contactTilte": "Get in touch",
+  "contactViewGitHub": "View on GitHUb",
+  "contactFormName": "Name",  
+  "contactFormEMail": "E-mail",  
+  "contactFormMessage": "Message",  
+  "contactFormSendMessage": "Send Message",  
+
+  "footerWith": "with",
+  "footerAnd": "and",
+  "footerBy": "by",
+  "footerMyName": "Harshal Raikwar"
 }
