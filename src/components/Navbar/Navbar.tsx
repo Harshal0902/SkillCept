@@ -2,7 +2,8 @@ import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import Headroom from "react-headroom"
 import { Menu, Popover, Transition } from '@headlessui/react'
-import { MenuAlt3Icon, XIcon, LogoutIcon } from '@heroicons/react/outline'
+import { MenuAlt3Icon, XIcon } from '@heroicons/react/outline'
+import LogoutIcon from "../../assets/logout.png"
 import fire from "../../firebase"
 import "../../i18n"
 import i18n from '../../i18n'
@@ -29,7 +30,7 @@ export default function Navbar() {
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
                             <div className="flex justify-between items-center border-b-2 py-3 md:justify-start md:space-x-10">
                                 <div className="flex justify-start lg:w-0 lg:flex-1">
-                                    <Link to='/' className="logo text-white text-5xl w-auto no-underline">SkillCept</Link>
+                                    <Link to='/' className="font-dancingScript text-white text-5xl w-auto no-underline cursor-pointer">SkillCept</Link>
                                 </div>
                                 <div className="-mr-2 -my-2 md:hidden">
                                     <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -39,11 +40,13 @@ export default function Navbar() {
                                 </div>
                                 <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-                                    <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkHome')}</Link>
+                                    <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkHome')}</Link>
 
-                                    <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkClass')}</Link>
+                                    <Link to='/class' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkClass')}</Link>
 
-                                    <Link to='/contact' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkContact')}</Link>
+                                    <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkFunZone')}</Link>
+
+                                    <Link to='/contact' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkContact')}</Link>
 
                                 </Popover.Group>
                                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -53,7 +56,7 @@ export default function Navbar() {
                                         {({ open }) => (
                                             <>
                                                 <span className="rounded-md shadow-sm">
-                                                    <Menu.Button className="text__font inline-flex justify-center w-full px-2 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+                                                    <Menu.Button className="font-sourceSerifPro inline-flex justify-center w-full px-2 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
                                                         <span>{t('navChangeLang')}</span>
                                                         <svg
                                                             className="w-5 h-5 ml-2 -mr-1"
@@ -78,7 +81,7 @@ export default function Navbar() {
                                                     leaveFrom="transform opacity-100 scale-100"
                                                     leaveTo="transform opacity-0 scale-95"
                                                 >
-                                                    <Menu.Items static className="text__font absolute -ml-40 w-40 mt-4 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+                                                    <Menu.Items static className="font-sourceSerifPro absolute -ml-40 w-40 mt-4 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
 
                                                         <div className="py-1">
                                                             <Menu.Item>
@@ -91,7 +94,7 @@ export default function Navbar() {
                                                         <div className="py-1">
                                                             <Menu.Item>
                                                                 <div className=" flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer" onClick={changeLang("hi")} >
-                                                                हिंदी
+                                                                    हिंदी
                                                                 </div>
                                                             </Menu.Item>
                                                         </div>
@@ -135,7 +138,7 @@ export default function Navbar() {
                                     </Menu>
 
                                     <div className='nav-links pl-4 cursor-pointer' onClick={handleLogout}>
-                                        <LogoutIcon className="h-7 w-7 text-white" aria-hidden="true" />
+                                        <img src={LogoutIcon} className="h-10 w-10 text-white" alt="logout" aria-hidden="true" />
                                     </div>
 
                                 </div>
@@ -162,7 +165,7 @@ export default function Navbar() {
                                         <div className="flex items-center justify-between">
                                             <div>
                                                 <div className="flex justify-start lg:w-0 lg:flex-1">
-                                                    <Link to='/' className="logo text-white text-5xl h-8 w-auto no-underline">SkillCept</Link>
+                                                    <Link to='/' className="font-dancingScript text-white text-5xl h-8 w-auto no-underline">SkillCept</Link>
                                                 </div>
                                             </div>
                                             <div className="-mr-2">
@@ -173,8 +176,8 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className="mt-6">
-                                            <nav className="text__font grid gap-y-8 text-white">
-                                            {t('navSiteDetail')}
+                                            <nav className="font-sourceSerifPro grid gap-y-8 text-white">
+                                                {t('navSiteDetail')}
                                             </nav>
                                         </div>
                                     </div>
@@ -182,11 +185,13 @@ export default function Navbar() {
 
                                         <div className="grid place-items-center">
 
-                                            <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkHome')}</Link>
+                                            <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkHome')}</Link>
 
-                                            <Link to='/' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkClass')}</Link>
+                                            <Link to='/class' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkClass')}</Link>
 
-                                            <Link to='/contact' className="text__font text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkContact')}</Link>
+                                            <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkFunZone')}</Link>
+
+                                            <Link to='/contact' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkContact')}</Link>
 
                                         </div>
 
@@ -194,31 +199,31 @@ export default function Navbar() {
                                             <div className="w-64 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                                         </div>
 
-                                        <div className="text__font text-xl text-gray-300 hover:bg-gray-700">{t('navChangeLang')}:</div>
+                                        <div className="font-sourceSerifPro text-xl text-gray-300 hover:bg-gray-700">{t('navChangeLang')}:</div>
 
                                         <div className="grid grid-cols-3 gap-y-4 gap-x-4">
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("en")}>
+                                            <div className="font-sourceSerifPro text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("en")}>
                                                 English
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("hi")}>
-                                            हिंदी
+                                            <div className="font-sourceSerifPro text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("hi")}>
+                                                हिंदी
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("de")}>
+                                            <div className="font-sourceSerifPro text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("de")}>
                                                 German
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("ru")}>
+                                            <div className="font-sourceSerifPro text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("ru")}>
                                                 Russian
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("fr")}>
+                                            <div className="font-sourceSerifPro text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("fr")}>
                                                 French
                                             </div>
 
-                                            <div className="text__font text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("ja")}>
+                                            <div className="font-sourceSerifPro text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("ja")}>
                                                 Japanese
                                             </div>
 
@@ -229,7 +234,7 @@ export default function Navbar() {
                                         </div>
 
                                         <div className='grid place-items-center cursor-pointer' onClick={handleLogout}>
-                                            <LogoutIcon className="h-7 w-7 text-white" aria-hidden="true" />
+                                            <img src={LogoutIcon} className="h-10 w-10 text-white" alt="logout" aria-hidden="true" />
                                         </div>
                                     </div>
 

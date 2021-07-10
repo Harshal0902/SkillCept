@@ -9,7 +9,9 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
-      'display': ['Dancing Script'],
+      'dancingScript': ['Dancing Script'],
+      'sourceSerifPro': ['Source Serif Pro'],
+      "fontVollkorn": ['Vollkorn'],
       'body': ['Open Sans'],
     }
   },

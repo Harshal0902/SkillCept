@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react"
 import './App.scss';
+import Preloader from "./components/Preloader/Preloader"
 import fire from "./firebase"
 import Main from "./containers/main"
 import Login from "./components/Login/Login"
 import "./i18n"
 
 const App = () => {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2500)
+  }, [])
+
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -82,24 +88,30 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
-      {user ? (
-        <Main handleLogout={handleLogout} />
+    <>
+      {loading === false ? (
+        <div className="App">
+          {user ? (
+            <Main handleLogout={handleLogout} />
+          ) : (
+            <Login
+              email={email}
+              setEmail={setEmail}
+              password={password}
+              setPassword={setPassword}
+              handleLogin={handleLogin}
+              handleSignup={handleSignup}
+              hasAccount={hasAccount}
+              setHasAccount={setHasAccount}
+              emailError={emailError}
+              passwordError={passwordError}
+            />
+          )}
+        </div>
       ) : (
-        <Login
-          email={email}
-          setEmail={setEmail}
-          password={password}
-          setPassword={setPassword}
-          handleLogin={handleLogin}
-          handleSignup={handleSignup}
-          hasAccount={hasAccount}
-          setHasAccount={setHasAccount}
-          emailError={emailError}
-          passwordError={passwordError}
-        />
+        <Preloader />
       )}
-    </div>
+    </>
   );
 }
 
