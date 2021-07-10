@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Models.scss"
-import EarthQR from "../../Assets/Earth-QR"
-import SolarSystemQR from "../../Assets/SolarSystemQR"
-import H2OrQR from "../../Assets/H2OQR"
-import BloediteQR from "../../Assets/BloediteQR"
+import EarthQR from "../../assets/Earth-QR"
+import SolarSystemQR from "../../assets/SolarSystemQR"
+import H2OrQR from "../../assets/H2OQR"
+import BloediteQR from "../../assets/BloediteQR"
 
 export default function Models() {
     return (
