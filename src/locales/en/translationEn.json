@@ -3,7 +3,7 @@
   "navDropLang": "English",
 
   "navLinkHome": "Home",
-  "navLinkClass": "Class",
+  "navLinkLearn": "Learn",
   "navLinkFunZone": "Fun Zone",
   "navLinkContact": "Contact",
   "navChangeLang": "Change Language",
@@ -19,9 +19,11 @@
   "homeMultiLang": "Available in multiple languages",
   "homeMultiLangDetails": "The platform is available in multiple languages for the creation and appreciation of cultural awareness, adds academic and educational value, enhances creativity, an adjustment in society, and appreciation of local languages.",
 
-  "contactTilte": "Get in touch",
-  "contactViewGitHub": "View on GitHUb",
-  "contactFormName": "Name",  
+  "contactTilte": "Lets talk about everything!",
+  "contactHateEmail": "Hate forms? Send an",
+  "contactTextEmail": "email",
+  "contactInstead": "instead.",
+  "contactFormName": "Your Name",  
   "contactFormEMail": "E-mail",  
   "contactFormMessage": "Message",  
   "contactFormSendMessage": "Send Message",  

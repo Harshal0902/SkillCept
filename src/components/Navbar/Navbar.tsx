@@ -38,11 +38,11 @@ export default function Navbar() {
                                         <MenuAlt3Icon className="h-7 w-7 focus:outline-none" aria-hidden="true" />
                                     </Popover.Button>
                                 </div>
-                                <Popover.Group as="nav" className="hidden md:flex space-x-10">
+                                <Popover.Group as="nav" className="hidden md:flex md:space-x-0 lg:space-x-5">
 
                                     <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkHome')}</Link>
 
-                                    <Link to='/class' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkClass')}</Link>
+                                    <Link to='/class' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkLearn')}</Link>
 
                                     <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkFunZone')}</Link>
 
@@ -81,7 +81,7 @@ export default function Navbar() {
                                                     leaveFrom="transform opacity-100 scale-100"
                                                     leaveTo="transform opacity-0 scale-95"
                                                 >
-                                                    <Menu.Items static className="font-sourceSerifPro absolute -ml-40 w-40 mt-4 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+                                                    <Menu.Items static className="font-sourceSerifPro absolute -ml-40 w-40 mt-5 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
 
                                                         <div className="py-1">
                                                             <Menu.Item>
@@ -187,7 +187,7 @@ export default function Navbar() {
 
                                             <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkHome')}</Link>
 
-                                            <Link to='/class' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkClass')}</Link>
+                                            <Link to='/class' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkLearn')}</Link>
 
                                             <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkFunZone')}</Link>
 
@@ -199,9 +199,9 @@ export default function Navbar() {
                                             <div className="w-64 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                                         </div>
 
-                                        <div className="font-sourceSerifPro text-xl text-gray-300 hover:bg-gray-700">{t('navChangeLang')}:</div>
+                                        <div className="font-sourceSerifPro pl-3 text-xl text-gray-300 hover:bg-gray-700">{t('navChangeLang')}:</div>
 
-                                        <div className="grid grid-cols-3 gap-y-4 gap-x-4">
+                                        <div className="grid grid-cols-3 pl-5 gap-y-4 gap-x-4">
 
                                             <div className="font-sourceSerifPro text-base font-medium text-gray-300 hover:text-gray-200" onClick={changeLang("en")}>
                                                 English

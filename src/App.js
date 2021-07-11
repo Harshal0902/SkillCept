@@ -3,7 +3,7 @@ import './App.scss';
 import Preloader from "./components/Preloader/Preloader"
 import fire from "./firebase"
 import Main from "./containers/main"
-import Login from "./components/Login/Login"
+import Login from "./pages/Login/Login"
 import "./i18n"
 
 const App = () => {
