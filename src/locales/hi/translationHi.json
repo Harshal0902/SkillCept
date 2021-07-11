@@ -3,7 +3,7 @@
   "navDropLang": "हिंदी",
 
   "navLinkHome": "घर",
-  "navLinkClass": "कक्षा",
+  "navLinkLearn": "सीखना",
   "navLinkFunZone": "मज़ेदार क्षेत्र",
   "navLinkContact": "संपर्क करें",
   "navChangeLang": "भाषा बदलें",
@@ -19,9 +19,11 @@
   "homeMultiLang": "कई भाषाओं में उपलब्ध",
   "homeMultiLangDetails": "मंच सांस्कृतिक जागरूकता के निर्माण और प्रशंसा के लिए कई भाषाओं में उपलब्ध है, शैक्षणिक और शैक्षिक मूल्य जोड़ता है, रचनात्मकता को बढ़ाता है, समाज में समायोजन और स्थानीय भाषाओं की सराहना करता है।",
 
-  "contactTilte": "संपर्क करें",
-  "contactViewGitHub": "GitHUb पर देखें",
-  "contactFormName": "नाम",
+  "contactTilte": "चलो सब कुछ के बारे में बात करते हैं!",
+  "contactHateEmail": "प्रपत्र से नफरत है?",
+  "contactTextEmail": "ईमेल",
+  "contactInstead": "भेजने",
+  "contactFormName": "तुम्हारा नाम",
   "contactFormEMail": "ईमेल",
   "contactFormMessage": "संदेश",
   "contactFormSendMessage": "मेसेज भेजें",
