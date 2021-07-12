@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       animation: {
         'spin-slow': 'spin 5s linear infinite',
-      }
+      },
+      colors: {
+        homeImg:  '#DCE4F7',
+        ARbg: '#203864',
+      },
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],

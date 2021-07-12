@@ -42,7 +42,7 @@ export default function Navbar() {
 
                                     <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkHome')}</Link>
 
-                                    <Link to='/class' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkLearn')}</Link>
+                                    <Link to='/learn' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkLearn')}</Link>
 
                                     <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline font-serif">{t('navLinkFunZone')}</Link>
 
@@ -138,7 +138,7 @@ export default function Navbar() {
                                     </Menu>
 
                                     <div className='nav-links pl-4 cursor-pointer' onClick={handleLogout}>
-                                        <img src={LogoutIcon} className="h-10 w-10 text-white" alt="logout" aria-hidden="true" />
+                                        <img src={LogoutIcon} height="40" width="40" className=" text-white" alt="logout" aria-hidden="true" />
                                     </div>
 
                                 </div>
@@ -187,7 +187,7 @@ export default function Navbar() {
 
                                             <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkHome')}</Link>
 
-                                            <Link to='/class' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkLearn')}</Link>
+                                            <Link to='/learn' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkLearn')}</Link>
 
                                             <Link to='/' className="font-sourceSerifPro text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium no-underline">{t('navLinkFunZone')}</Link>
 
@@ -234,7 +234,7 @@ export default function Navbar() {
                                         </div>
 
                                         <div className='grid place-items-center cursor-pointer' onClick={handleLogout}>
-                                            <img src={LogoutIcon} className="h-10 w-10 text-white" alt="logout" aria-hidden="true" />
+                                            <img src={LogoutIcon} height="40" width="40" className="text-white" alt="logout" aria-hidden="true" />
                                         </div>
                                     </div>
 
