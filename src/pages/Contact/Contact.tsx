@@ -13,7 +13,7 @@ export default function Contact() {
                     <div>
                         <h2 className="font-dancingScript text-4xl lg:text-5xl font-bold tracking-wider leading-tight">{t('contactTilte')}</h2>
                         <div className="font-sourceSerifPro text-gray-700 mt-4">
-                        {t('contactHateEmail')} <a href="mailto:harshalraikwar07@gmail.com" className="text-blue-800 underline cursor-pointer">{t('contactTextEmail')}</a> {t('contactInstead')}
+                            {t('contactHateEmail')} <a href="mailto:harshalraikwar07@gmail.com" className="text-blue-800 underline cursor-pointer">{t('contactTextEmail')}</a> {t('contactInstead')}
                         </div>
                     </div>
                     <div className="mt-2 lg:p-12 sm:p-1 text-center">
@@ -37,10 +37,11 @@ export default function Contact() {
                             className="font-sourceSerifPro w-full h-36 bg-homeImg text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" required name="Sender's Message"></textarea>
                     </div>
                     <div className="mt-8">
-                        <button
-                            className="font-sourceSerifPro uppercase text-sm font-bold tracking-wider bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline" type="submit" id="formBtn">
+
+                        <button className="font-sourceSerifPro uppercase w-full bg-indigo-500 text-white font-bold py-3 px-4 border-b-4 hover:border-b-2 border-gray-500 focus:border-gray-400 rounded-full">
                             {t('contactFormSendMessage')}
                         </button>
+
                     </div>
                 </form>
             </div>
