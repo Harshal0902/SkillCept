@@ -20,8 +20,8 @@ export default function Home() {
 
                             <p className="font-sourceSerifPro self-center text-xl text-justify tracking-wide">{t('homeAbout')}</p>
 
-                            <Link to="class">
-                                <button className="font-sourceSerifPro md:w-1/3 px-4 mt-4 bg-red-50 text-white p-2 text-base shadow-sm font-semibold tracking-wider border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full hover:shadow-lg ">{t('homeExplore')}</button>
+                            <Link to="learn">
+                                <button className="font-sourceSerifPro md:w-1/3 px-8 mt-4 bg-red-50 text-white p-2 text-base shadow-sm font-semibold tracking-wider border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full hover:shadow-lg ">{t('homeExplore')}</button>
                             </Link>
 
                         </div>
@@ -43,7 +43,7 @@ export default function Home() {
                 <div className="flex items-center justify-center pb-8">
                     <div className="font-sourceSerifPro grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
-                        <div className="relative bg-white py-9 px-6 rounded-3xl w-64 my-4 shadow-xl">
+                        <div className="relative bg-white p-6 rounded-3xl w-64 my-4 shadow-xl">
                             <div className="text-white flex items-center absolute rounded-full p-3 shadow-xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 left-4 -top-6">
                                 <img className="w-12" src={threeD} alt="3D" />
                             </div>
@@ -55,7 +55,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="relative bg-white py-9 px-6 rounded-3xl w-64 my-4 shadow-xl">
+                        <div className="relative bg-white p-6 rounded-3xl w-64 my-4 shadow-xl">
                             <div className=" text-white flex items-center absolute rounded-full p-3 shadow-xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 left-4 -top-6">
                                 <img className="w-12" src={AR} alt="AR" />
                             </div>
@@ -67,7 +67,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="relative bg-white py-9 px-6 rounded-3xl w-64 my-4 shadow-xl">
+                        <div className="relative bg-white p-6 rounded-3xl w-64 my-4 shadow-xl">
                             <div className=" text-white flex items-center absolute rounded-full p-3 shadow-xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 left-4 -top-6">
                                 <img className="w-12" src={MultiLang} alt="MultiLang" />
                             </div>

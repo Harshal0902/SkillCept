@@ -1,10 +1,19 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import { useTranslation } from 'react-i18next'
 import ClassImg from "../../assets/class/class.png"
 
 export default function Learn() {
+    const { t } = useTranslation();
     return (
         <div className="pt-16 bg-homeImg">
+
+            <div className="w-full py-10 grid place-items-center">
+                <h1 className="font-dancingScript pb-2 font-semibold tracking-wide text-5xl lg:text-6xl">
+                    {t('learnCLassTitle')}
+                </h1>
+                <div className="w-72 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            </div>
 
             <div className="w-full px-16 flex justify-around flex-wrap">
 
