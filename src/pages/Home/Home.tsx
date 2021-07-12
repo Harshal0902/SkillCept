@@ -40,7 +40,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center pb-8">
                     <div className="font-sourceSerifPro grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
                         <div className="relative bg-white py-9 px-6 rounded-3xl w-64 my-4 shadow-xl">

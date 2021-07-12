@@ -5,7 +5,6 @@ export default function ClassModel() {
     return (
         <>
             <Earth />
-            <Earth />
         </>
     )
 }
