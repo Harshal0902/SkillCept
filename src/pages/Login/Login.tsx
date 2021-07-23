@@ -39,30 +39,39 @@ const Login: React.FC<Props> = (props) => {
                                 SkillCept
                             </h2>
 
-                            <label className="text-white block">Email</label>
-                            <input className="w-full border-b-2 rounded-xl pl-3 pb-2 border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 outline-none md:text-lg" type="text" placeholder="test@gmail.com" required value={email} onChange={(e) => setEmail(e.target.value)} />
-                            <p className="errorMsg">{emailError}</p>
+                            <div className="font-sourceSerifPro outline relative ">
+                                <input type="text" name="username" placeholder=" " className="block border-b-2 rounded-xl border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 pl-3 pb-2 w-full text-lg appearance-none focus:outline-none bg-transparent" required value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <label className="absolute top-0 text-lg bg-white pb-4 text-gray-500 p-2 md:text-lg -z-1 duration-300 origin-0">Email</label>
+                                <p className="errorMsg">{emailError}</p>
+                            </div>
 
-                            <label className="text-white block">Password</label>
-                            <input className="w-full border-b-2 rounded-xl pl-3 pb-2 border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 outline-none md:text-lg" type="password" placeholder="123456" required value={password} onChange={(e) => setPassword(e.target.value)} />
-                            <p className="errorMsg">{passwordError}</p>
+                            <div className="font-sourceSerifPro outline mt-8 relative ">
+                                <input type="text" name="username" placeholder=" " className="block border-b-2 rounded-xl border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 pl-3 pb-2 w-full text-lg appearance-none focus:outline-none bg-transparent" required value={password} onChange={(e) => setPassword(e.target.value)} />
+                                <label className="absolute top-0 text-lg bg-white text-gray-500 p-2 md:text-lg -z-1 duration-300 origin-0">Password</label>
+                                <p className="errorMsg">{emailError}</p>
+                            </div>
 
                             <div className="btnContainer my-3">
                                 {hasAccount ? (
                                     <>
-                                        <input className="w-full border-b-2 rounded-xl mt-2 pl-3 pb-2 border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 outline-none md:text-lg mb-4" type="password" placeholder="Conform Password" value={password} required onChange={(e) => setPassword(e.target.value)} />
 
-                                        <button className="border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full mt-4 py-3 text-4 cursor-pointer rounded-3xl" onClick={handleSignup}>Sign In</button>
+                                        <div className="font-sourceSerifPro outline mt-5 relative ">
+                                            <input type="text" name="username" placeholder=" " className="block border-b-2 rounded-xl border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 pl-3 pb-2 w-full text-lg appearance-none focus:outline-none bg-transparent" value={password} onChange={(e) => setPassword(e.target.value)} />
+                                            <label className="absolute top-0 text-lg bg-white text-gray-500 p-2 md:text-lg -z-1 duration-300 origin-0">Conform Password</label>
+                                            <p className="errorMsg">{emailError}</p>
+                                        </div>
+
+                                        <button className="font-sourceSerifPro border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full mt-4 py-3 text-4 cursor-pointer rounded-3xl" onClick={handleSignup}>Sign In</button>
 
 
-                                        <p className="-mx-4 mt-4 text-right text-gray-700">Have an account?{" "}
+                                        <p className="font-sourceSerifPro -mx-4 mt-4 text-right text-gray-700">Have an account?{" "}
                                             <span className="text-gray-900 cursor-pointer" onClick={() => setHasAccount(!hasAccount)}>Sign In</span></p>
                                     </>
                                 ) : (
                                     <>
-                                        <button className="border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full mt-4 py-3 text-4 cursor-pointer rounded-3xl" onClick={handleLogin}>Sign In</button>
+                                        <button className="font-sourceSerifPro border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full mt-4 py-3 text-4 cursor-pointer rounded-3xl" onClick={handleLogin}>Sign In</button>
 
-                                        <p className="-mx-4 mt-4 text-right text-gray-700">Dont't have an account?{" "}
+                                        <p className="font-sourceSerifPro -mx-4 mt-4 text-right text-gray-700">Dont't have an account?{" "}
                                             <span className="text-gray-900 cursor-pointer" onClick={() => setHasAccount(!hasAccount)}>Sign Up</span></p>
                                     </>
                                 )}

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -14,7 +14,7 @@
 
 // Track
 ::-webkit-scrollbar-track {
-  background: #DCE4F7;
+  background: #dce4f7;
 }
 
 // Handle
@@ -27,6 +27,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(126, 38, 185, 0.959);
   border-radius: 12px;
+}
+
+// Login/Sign Up Input field
+input:focus-within ~ label {
+  @apply text-blue-500;
+}
+.outline input:focus-within ~ label,
+.outline input:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-5 z-0 ml-1 px-1 py-0;
 }
 
 // 3D model iframe
