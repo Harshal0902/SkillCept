@@ -1,12 +1,16 @@
 import React from 'react'
-import Earth from "../../components/Models/Earth"
-import ArticFox from "../../components/Models/ArcticFox"
+import Earth from "../../components/Models/Earth.js"
+import SolarSystem from "../../components/Models/SolarSystem.js"
+import Water from "../../components/Models/Water.js"
+import ChemGlass from "../../components/Models/ChemGlass.js"
 
 export default function ClassModel() {
     return (
-        <div className="pt-32 bg-ARbg">
+        <div className="pt-20 z-10 bg-homeImg">
             <Earth />
-            <ArticFox />
+            <SolarSystem />
+            <Water />
+            <ChemGlass />
         </div>
     )
 }
