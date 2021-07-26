@@ -15,6 +15,7 @@ const theme = {
   botFontColor: "#fff",
   userBubbleColor: "#59dd64",
   userFontColor: "#fff",
+  innerHeight: "80%",
 };
 
 const steps = [

@@ -7,8 +7,11 @@ module.exports = {
         'spin-slow': 'spin 5s linear infinite',
       },
       colors: {
-        homeImg:  '#DCE4F7',
+        homeImg: '#DCE4F7',
         ARbg: '#203864',
+      },
+      zIndex: {
+        "-1": "-1",
       },
     },
     fontFamily: {
@@ -20,7 +23,7 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
   },
   plugins: [],
 }
