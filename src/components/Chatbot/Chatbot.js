@@ -162,6 +162,7 @@ function Chatbot() {
           botAvatar={ChatbotImg}
           avatarStyle={{ borderRadius: "100%" }}
           floating={true}
+          className="mb-8"
           floatingIcon={
             <img
               src={ChatbotImg}
