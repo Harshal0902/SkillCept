@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 import Study from "../../assets/study.svg"
 
 interface Props {
@@ -18,15 +19,43 @@ interface Props {
 
 const Login: React.FC<Props> = (props) => {
 
+    const fadeLeft = {
+        hidden: {
+            opacity: 0,
+            x: -80,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                delay: .4,
+            }
+        },
+    }
+
+    const fadeRight = {
+        hidden: {
+            opacity: 0,
+            x: 80,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                delay: .4,
+            }
+        },
+    }
+
     const { email, setEmail, password, setPassword, handleLogin, handleSignup, hasAccount, setHasAccount, confPassword, emailError, passwordError } = props;
 
     return (
         <div>
-            <div className="lg:mt-0">
+            <div className="relative">
 
-                <div className="md:h-96 md:w-96 md:mt-16 md:ml-44 bg-blue-600 mt-16 rounded-3xl"></div>
+                <motion.div variants={fadeLeft} initial="hidden" animate="visible" className="z-10 md:h-96 md:w-96 md:mt-16 md:ml-44 bg-blue-600 mt-16 rounded-3xl"></motion.div>
 
-                <div className="p-4 m-8 lg:mx-56 md:mx-8 origin-bottom-right transform lg:-mt-80 bg-white border-blue-800 border-4 rounded-2xl">
+                <div className="z-20 p-4 m-8 lg:mx-56 md:mx-8 origin-bottom-right transform lg:-mt-80 bg-white border-blue-800 border-4 rounded-2xl">
                     <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 p-4">
 
                         <div className="w-11/12 lg:-ml-4 sm:ml-16 rounded-lg p-8">
@@ -61,7 +90,7 @@ const Login: React.FC<Props> = (props) => {
                                             <p className="errorMsg">{emailError}</p>
                                         </div>
 
-                                        <button className="font-sourceSerifPro border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full mt-4 py-3 text-4 cursor-pointer rounded-3xl" onClick={handleSignup}>Sign In</button>
+                                        <button className="font-sourceSerifPro border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full mt-4 py-3 text-4 cursor-pointer rounded-3xl" onClick={handleSignup}>Sign Up</button>
 
 
                                         <p className="font-sourceSerifPro -mx-4 mt-4 text-right text-gray-700">Have an account?{" "}
@@ -81,7 +110,7 @@ const Login: React.FC<Props> = (props) => {
                     </div>
                 </div>
 
-                <div className="float-right h-40 w-40 mr-48 -mt-40 bg-blue-600 rounded-3xl md:block sm:hidden"></div>
+                <motion.div variants={fadeRight} initial="hidden" animate="visible" className="z-10 float-right h-40 w-40 mr-48 -mt-40 bg-blue-600 rounded-3xl md:block sm:hidden"></motion.div>
 
             </div>
         </div>

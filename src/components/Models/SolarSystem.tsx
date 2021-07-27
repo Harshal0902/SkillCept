@@ -8,15 +8,15 @@ import "../../i18n"
 import { useTranslation } from 'react-i18next'
 
 const Model = () => {
-    const gltf = useLoader(GLTFLoader, "/earth/scene.gltf");
+    const gltf = useLoader(GLTFLoader, "/solar_system/scene.gltf");
     return (
         <>
-            <primitive object={gltf.scene} scale={0.017} />
+            <primitive object={gltf.scene} scale={0.0045} />
         </>
     );
 };
 
-export default function Earth() {
+export default function SolarSystem() {
 
     const fade = {
         hidden: {
@@ -41,7 +41,7 @@ export default function Earth() {
                 <div className="md:grid md:grid-cols-3 lg:mx-20 sm:mx-4">
 
                     <div className="h-full w-full px-4 md:col-span-1 lg:block outline-none cursor-pointer">
-                        <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
+                        <Canvas>
                             <Suspense fallback={null}>
                                 <Model />
                                 <OrbitControls autoRotate />
@@ -54,9 +54,9 @@ export default function Earth() {
                     <motion.div variants={fade} initial="hidden" animate="visible" className="mt-5 md:mt-0 md:col-span-2">
                         <div className="md:flex md:flex-col md:justify-center ">
 
-                            <h2 className="font-fontVollkorn mx-8 self-center text-black text-5xl font-medium mb-4 tracking-wide">{t('modelEarthTitle')}</h2>
+                            <h2 className="font-fontVollkorn mx-8 self-center text-black text-5xl font-medium mb-4 tracking-wide">{t('modelSolarSystemTitle')}</h2>
 
-                            <p className="font-fontVollkorn mx-8 self-center font-medium text-black text-xl text-justify tracking-wide">{t('modelEarthDetails')}
+                            <p className="font-fontVollkorn mx-8 self-center text-black text-xl font-medium text-justify tracking-wide">{t('modelSolarSyatemDetails')}
                             </p>
 
                             {/* <p className="font-fontVollkorn mx-8 self-center text-black text-xl text-justify tracking-wide">{t('modelView')}</p>

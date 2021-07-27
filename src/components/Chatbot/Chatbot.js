@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Chatbot.scss";
+import ChatbotImg from "../../assets/chatbot.png"
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import { useHistory } from "react-router-dom";
@@ -7,13 +7,13 @@ import funfacts from "./Funfacts";
 
 const theme = {
   background: "#F4F5F6",
-  fontFamily: "sans-serif",
-  headerBgColor: "#15bea9",
+  fontFamily: "Source Serif Pro",
+  headerBgColor: "#C83CB9",
   headerFontColor: "#fff",
-  headerFontSize: "16px",
-  botBubbleColor: "#65b1ff",
+  headerFontSize: "18px",
+  botBubbleColor: "#4984B8",
   botFontColor: "#fff",
-  userBubbleColor: "#59dd64",
+  userBubbleColor: "#439fca",
   userFontColor: "#fff",
   innerHeight: "80%",
 };
@@ -21,7 +21,7 @@ const theme = {
 const steps = [
   {
     id: "1",
-    message: "Hey! I am Help-bot, how are you feeling today",
+    message: "Hey! I am Study Bot, how are you feeling today",
     trigger: "expressions",
   },
   {
@@ -48,7 +48,7 @@ const steps = [
   {
     id: "normal",
     message:
-      "Ooh, Are You Confused Sir ? Don't Worry I am here to Assist You 👻",
+      "Ooh, Are You Confused Sir/Mam ? Don't Worry I am here to Assist You 👻",
     trigger: "help",
   },
   {
@@ -60,7 +60,7 @@ const steps = [
   {
     id: "angry",
     message:
-      "😐 Oops, Did i do something wrong....But wait i am a bot i can't do that..🤥.  Well i suggest you to relax your mind, play some games,  watch some movies  and eat a lot of healthy tasty food just like me..😝",
+      "😐 Oops, Did i do something wrong....But wait i am a bot i can't do that..🤥.  Well i suggest you to relax your mind, play some games,  watch some movies and eat a lot of healthy tasty food just like me..😝",
     trigger: "help",
   },
   {
@@ -158,13 +158,13 @@ function Chatbot() {
           steps={steps}
           handleEnd={handleEnd}
           opened={opened}
-          headerTitle="Assistant"
-          botAvatar={"https://uploads-ssl.webflow.com/587121889ec910305c557a46/5f3f844eb1e9653ae8036e14_Bo%20neutral%20final%20.svg"}
+          headerTitle="Study Bot"
+          botAvatar={ChatbotImg}
           avatarStyle={{ borderRadius: "100%" }}
           floating={true}
           floatingIcon={
             <img
-              src={"https://uploads-ssl.webflow.com/587121889ec910305c557a46/5f3f844eb1e9653ae8036e14_Bo%20neutral%20final%20.svg"}
+              src={ChatbotImg}
               style={{ width: "70%" }}
               alt="chatBot icon"
             />

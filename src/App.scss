@@ -38,11 +38,6 @@ input:focus-within ~ label {
   @apply transform scale-75 -translate-y-5 z-0 ml-1 px-1 py-0;
 }
 
-// 3D model iframe
-.iframe {
-  height: 656px;
-}
-
 // Preloader
 .preloader {
   min-height: 100vh;
