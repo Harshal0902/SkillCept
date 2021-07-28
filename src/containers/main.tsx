@@ -51,7 +51,7 @@ function Main() {
                 <Route path='/contact' exact component={Contact} />
                 <Redirect to="/" />
             </Switch>
-            <motion.div variants={fadeChatbot} initial="hidden" animate="visible">
+            <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
                 <Chatbot />
             </motion.div>
             <Footer />
