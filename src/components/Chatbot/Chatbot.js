@@ -16,11 +16,27 @@ const theme = {
   userBubbleColor: "#439fca",
   userFontColor: "#fff",
   innerHeight: "80%",
+  fontWeight: "800"
 };
 
 const steps = [
   {
-    id: "1",
+    id: '1',
+    message: 'What is your name?',
+    trigger: '2',
+  },
+  {
+    id: '2',
+    user: true,
+    trigger: '3',
+  },
+  {
+    id: '3',
+    message: "Hi {previousValue}, I am Study Bot, how are you feeling today",
+    trigger: "expressions",
+  },
+  {
+    id: "4",
     message: "Hey! I am Study Bot, how are you feeling today",
     trigger: "expressions",
   },
@@ -82,14 +98,14 @@ const steps = [
   },
   {
     id: "services",
-    message: "select one of these services",
+    message: "Select one of these services",
     trigger: "selectServices",
   },
   {
     id: "selectServices",
     options: [
       { value: "Class", label: "Class", trigger: "selectedService" },
-      { value: "goBack", label: "go back", trigger: "options" },
+      { value: "goBack", label: "Go back", trigger: "options" },
     ],
   },
   {
@@ -124,7 +140,7 @@ const steps = [
 
 
 function FunFact() {
-  const randInt = Math.floor(Math.random() * 14);
+  const randInt = Math.floor(Math.random() * 6);
   return <div>{funfacts[randInt]}</div>;
 }
 
@@ -133,7 +149,7 @@ function Chatbot() {
   const [key, setKey] = useState(Math.random());
   const history = useHistory();
 
-  const handleEnd = ({ steps, values }) => {
+  const handleEnd = ({ values }) => {
     switch (values[values.length - 1]) {
       case "home":
         history.push("/");
@@ -172,6 +188,7 @@ function Chatbot() {
           floatingStyle={{
             backgroundColor: "#ffffff",
             width: "60px",
+            height: "60px",
             boxShadow: "2px 2px 20px -8px #111",
           }}
         />

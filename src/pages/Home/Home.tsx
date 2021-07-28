@@ -18,7 +18,7 @@ export default function Home() {
             opacity: 1,
             x: 0,
             transition: {
-                delay: .4,
+                delay: .6,
             }
         },
     }
@@ -32,7 +32,7 @@ export default function Home() {
             opacity: 1,
             x: 0,
             transition: {
-                delay: .4,
+                delay: .6,
             }
         },
     }
@@ -46,7 +46,7 @@ export default function Home() {
             scale: 1,
             opacity: 1,
             transition: {
-                delay: .4
+                delay: .6
             }
         },
     }

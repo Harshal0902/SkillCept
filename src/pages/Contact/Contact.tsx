@@ -1,13 +1,30 @@
 import React from 'react'
 import ContacImg from "../../assets/contact/contact.svg"
 import { useTranslation } from 'react-i18next'
+import { motion } from "framer-motion"
 
 export default function Contact() {
+
+    const fadeBottom = {
+        hidden: {
+            opacity: 0,
+            y: 80,
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: .6,
+            }
+        },
+    }
+
     const { t } = useTranslation();
+
     return (
         <div className="relative overflow-hidden text-gray-100 px-8 py-16 bg-homeImg" >
 
-            <div
+            <motion.div variants={fadeBottom} initial="hidden" animate="visible"
                 className="relative z-1 max-w-screen-xl mt-16 px-5 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-8 lg:px-8 xl:px-16 py-8 mx-auto bg-white text-gray-900 rounded-xl shadow-xl">
                 <div className="flex flex-col justify-between">
                     <div>
@@ -44,7 +61,7 @@ export default function Contact() {
 
                     </div>
                 </form>
-            </div>
+            </motion.div>
 
         </div>
     )
