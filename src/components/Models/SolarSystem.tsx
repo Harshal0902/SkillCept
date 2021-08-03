@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
-import { Environment, OrbitControls, ContactShadows } from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { motion } from "framer-motion"
 import "../../i18n"
@@ -11,7 +11,7 @@ const Model = () => {
     const gltf = useLoader(GLTFLoader, "/solar_system/scene.gltf");
     return (
         <>
-            <primitive object={gltf.scene} scale={0.0045} />
+            <primitive object={gltf.scene} scale={0.006} />
         </>
     );
 };
@@ -42,12 +42,13 @@ export default function SolarSystem() {
 
                     <div className="h-full w-full px-4 md:col-span-1 lg:block outline-none cursor-pointer">
                         <Canvas>
+                            <ambientLight intensity={0.7} />
+                            <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
                             <Suspense fallback={null}>
                                 <Model />
-                                <OrbitControls autoRotate />
-                                <ContactShadows rotation-x={Math.PI / 2} position={[0, 1.8, 0]} opacity={0.25} width={50} height={50} blur={1} far={0.8} />
-                                <Environment preset="sunset" />
+                                <Environment preset="city" />
                             </Suspense>
+                            <OrbitControls autoRotate />
                         </Canvas>
                     </div>
 

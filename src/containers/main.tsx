@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { motion } from "framer-motion"
 import Navbar from '../components/Navbar/Navbar'
 import Chatbot from "../components/Chatbot/Chatbot"
@@ -8,6 +8,7 @@ import Learn from "../pages/Learn/Learn"
 import ClassRoom1 from "../pages/Classroom/Classroom1"
 import Contact from '../pages/Contact/Contact';
 import Footer from "../components/Footer/Footer"
+import Page404 from '../pages/404/404page'
 
 function Main() {
 
@@ -49,7 +50,9 @@ function Main() {
                 <Route path='/learn' exact component={Learn} />
                 <Route path='/class1' exact component={ClassRoom1} />
                 <Route path='/contact' exact component={Contact} />
-                <Redirect to="/" />
+                <Route component={Page404} />
+                {/* <Route path='/404' exact component={Page404} />
+                <Redirect to="/404" /> */}
             </Switch>
             <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
                 <Chatbot />
