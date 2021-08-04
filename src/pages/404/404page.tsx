@@ -5,7 +5,7 @@ import "./404page.scss"
 // Codepen by CodePen Andrew Lawendy, https://codepen.io/andrew-lawendy/pen/deOpMZ
 export default function page404() {
     return (
-        <div className="not-found parallax">
+        <div className="not-found parallax w-full">
             <div className="sky-bg"></div>
             <div className="wave-7"></div>
             <div className="wave-6"></div>
