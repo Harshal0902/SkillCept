@@ -1,34 +1,41 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import "./404page.scss"
+import AstronautImg from "../../assets/404/astronaut.png"
+import EarthImg from '../../assets/404/earth.png'
+import MoonImg from "../../assets/404/moon.svg"
+import { useTranslation } from 'react-i18next'
 
-// Codepen by CodePen Andrew Lawendy, https://codepen.io/andrew-lawendy/pen/deOpMZ
-export default function page404() {
+export default function Page404() {
+    
+    const { t } = useTranslation();
+
     return (
-        <div className="not-found parallax">
-            <div className="sky-bg"></div>
-            <div className="wave-7"></div>
-            <div className="wave-6"></div>
-            <Link className="wave-island" to="/">
-                <img src="http://res.cloudinary.com/andrewhani/image/upload/v1524501929/404/island.svg" alt="Island" />
-            </Link>
-            <div className="wave-5"></div>
-            <div className="wave-lost wrp">
-                <span>4</span>
-                <span>0</span>
-                <span>4</span>
+        <div className="w-full h-screen bg-gradient-to-b from-page404A to-page404C">
+
+            <div className="stars z-0"></div>
+
+            <div className="box_astronaut">
+                <img className="object_astronaut w-44 mt-16" alt="Astronaut" src={AstronautImg} />
             </div>
-            <div className="wave-4"></div>
-            <div className="wave-boat">
-                <img className="boat" src="http://res.cloudinary.com/andrewhani/image/upload/v1524501894/404/boat.svg" alt="Boat" />
+
+            <div className="grid lg:grid-cols-2 h-full">
+
+                <div className="z-10 md:px-8 sm:px-0">
+                    <Link to="/">
+                        <img className="absolute w-80 h-80 md:inset-x md:bottom-36 mt-16" alt="Earth" src={EarthImg} />
+                    </Link>
+                    <img className="absolute w-40 h-40 md:top-36 ml-52 mt-12" alt="Moon" src={MoonImg} />
+                </div>
+
+                <div className="font-fontVollkorn text-gray-200 pb-4 pl-24 pt-32 text-left tracking-wider md:flex md:flex-col md:justify-center">
+                    <div className="md:text-9xl text-6xl">404</div> <br />
+                    <div className="md:text-5xl text-2xl">{t('404Title')}</div>
+                    <div className="md:text-3xl text-xl">{t('404Lost')}</div>
+                    <div className="md:text-3xl text-xl">{t('404Earth')}</div>
+                </div>
+
             </div>
-            <div className="wave-3"></div>
-            <div className="wave-2"></div>
-            <div className="wave-1"></div>
-            <div className="wave-message">
-                <p>Your're lost</p>
-                <p>Click on the island to return</p>
-            </div>
+
         </div>
     )
 }

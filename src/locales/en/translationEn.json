@@ -43,6 +43,10 @@
   "contactFormMessage": "Message",
   "contactFormSendMessage": "Send Message",
 
+  "404Title": "Page not Found",
+  "404Lost": "UH OH! Looks like you are lost in space",
+  "404Earth": "Click on Earth to land on home page",
+
   "footerWith": "with",
   "footerAnd": "and",
   "footerBy": "by",
