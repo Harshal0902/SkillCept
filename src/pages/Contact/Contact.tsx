@@ -26,6 +26,7 @@ export default function Contact() {
 
             <motion.div variants={fadeBottom} initial="hidden" animate="visible"
                 className="relative z-1 max-w-screen-xl mt-16 px-5 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-8 lg:px-8 xl:px-16 py-8 mx-auto bg-white text-gray-900 rounded-xl shadow-xl">
+                    
                 <div className="flex flex-col justify-between">
                     <div>
                         <h2 className="font-dancingScript text-4xl lg:text-5xl font-bold tracking-wider leading-tight">{t('contactTilte')}</h2>
@@ -37,6 +38,7 @@ export default function Contact() {
                         <img className="w-full" src={ContacImg} alt="Send message" />
                     </div>
                 </div>
+
                 <form action="https://formspree.io/f/xbjqarrq" method="POST" className="lg:px-12 sm:px-1">
                     <div>
                         <span className="font-sourceSerifPro uppercase tracking-wide text-sm text-gray-600 font-bold">{t('contactFormName')}</span>
