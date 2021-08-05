@@ -8,7 +8,7 @@ import Learn from "../pages/Learn/Learn"
 import ClassRoom1 from "../pages/Classroom/Classroom1"
 import Contact from '../pages/Contact/Contact';
 import Footer from "../components/Footer/Footer"
-import Page404 from '../pages/404/404Page'
+import Page404 from '../pages/404/404page'
 
 function Main() {
 
