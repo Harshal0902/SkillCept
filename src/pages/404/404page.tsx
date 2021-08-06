@@ -28,10 +28,10 @@ export default function Page404() {
                 </div>
 
                 <div className="font-fontVollkorn text-gray-200 pl-24 pt-32 text-left tracking-wider md:flex md:flex-col md:justify-center">
-                    <div className="text-6xl md:text-9xl">404</div>
-                    <div className="text-2xl md:text-5xl">{t('404Title')}</div>
-                    <div className="text-xl md:text-3xl">{t('404Lost')}</div>
-                    <div className="text-xl md:text-3xl">{t('404Earth')}</div>
+                    <div className="md:text-9xl text-6xl">404</div> <br />
+                    <div className="md:text-5xl text-2xl">{t('404Title')}</div>
+                    <div className="md:text-3xl text-xl">{t('404Lost')}</div>
+                    <div className="md:text-3xl text-xl">{t('404Earth')}</div>
                 </div>
 
             </div>
