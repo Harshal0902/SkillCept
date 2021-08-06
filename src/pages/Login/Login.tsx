@@ -53,54 +53,54 @@ const Login: React.FC<Props> = (props) => {
         <div>
             <div className="relative">
 
-                <motion.div variants={fadeLeft} initial="hidden" animate="visible" className="z-10 md:h-96 md:w-96 md:mt-16 md:ml-44 bg-blue-600 mt-16 rounded-3xl"></motion.div>
+                <motion.div variants={fadeLeft} initial="hidden" animate="visible" className="z-10 mt-16 bg-blue-600 md:h-96 md:w-96 md:mt-16 md:ml-44 rounded-3xl"></motion.div>
 
-                <div className="z-20 p-4 m-8 lg:mx-56 md:mx-8 origin-bottom-right transform lg:-mt-80 bg-white border-blue-800 border-4 rounded-2xl">
-                    <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 p-4">
+                <div className="z-20 p-4 m-8 origin-bottom-right transform bg-white border-4 border-blue-800 lg:mx-56 md:mx-8 lg:-mt-80 rounded-2xl">
+                    <div className="p-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2">
 
-                        <div className="w-11/12 lg:-ml-4 sm:ml-16 rounded-lg p-8">
+                        <div className="w-11/12 p-8 rounded-lg lg:-ml-4 sm:ml-16">
                             <img width="600px" height="400px" src={Study} alt="img" />
                         </div>
 
                         <div className="md:flex md:flex-col md:justify-center lg:pr-16">
 
-                            <h2 className="font-dancingScript self-center text-indigo-800 text-5xl md:text-4xl lg:text-7xl font-bold mb-4 tracking-wider">
+                            <h2 className="self-center mb-4 text-5xl font-bold tracking-wider text-indigo-800 font-dancingScript md:text-4xl lg:text-7xl">
                                 SkillCept
                             </h2>
 
-                            <div className="font-sourceSerifPro outline relative ">
-                                <input type="text" name="username" placeholder=" " className="block border-b-2 rounded-xl border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 pl-3 pb-2 w-full text-lg appearance-none focus:outline-none bg-transparent" required value={email} onChange={(e) => setEmail(e.target.value)} />
-                                <label className="absolute top-0 text-lg bg-white pb-4 text-gray-500 p-2 md:text-lg -z-1 duration-300 origin-0">Email</label>
+                            <div className="relative font-sourceSerifPro outline ">
+                                <input type="text" name="username" placeholder=" " className="block w-full pb-2 pl-3 text-lg text-gray-800 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none" required value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <label className="absolute top-0 p-2 pb-4 text-lg text-gray-500 duration-300 bg-white md:text-lg -z-1 origin-0">Email</label>
                                 <p className="errorMsg">{emailError}</p>
                             </div>
 
-                            <div className="font-sourceSerifPro outline mt-8 relative ">
-                                <input type="text" name="username" placeholder=" " className="block border-b-2 rounded-xl border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 pl-3 pb-2 w-full text-lg appearance-none focus:outline-none bg-transparent" required value={password} onChange={(e) => setPassword(e.target.value)} />
-                                <label className="absolute top-0 text-lg bg-white text-gray-500 p-2 md:text-lg -z-1 duration-300 origin-0">Password</label>
+                            <div className="relative mt-8 font-sourceSerifPro outline ">
+                                <input type="password" name="username" placeholder=" " className="block w-full pb-2 pl-3 text-lg text-gray-800 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none" required value={password} onChange={(e) => setPassword(e.target.value)} />
+                                <label className="absolute top-0 p-2 text-lg text-gray-500 duration-300 bg-white md:text-lg -z-1 origin-0">Password</label>
                                 <p className="errorMsg">{emailError}</p>
                             </div>
 
-                            <div className="btnContainer my-3">
+                            <div className="my-3 btnContainer">
                                 {hasAccount ? (
                                     <>
 
-                                        <div className="font-sourceSerifPro outline mt-5 relative ">
-                                            <input type="text" name="username" placeholder=" " className="block border-b-2 rounded-xl border-gray-400 focus:border-green-400 text-gray-800 placeholder-gray-400 pl-3 pb-2 w-full text-lg appearance-none focus:outline-none bg-transparent" value={password} onChange={(e) => setPassword(e.target.value)} />
-                                            <label className="absolute top-0 text-lg bg-white text-gray-500 p-2 md:text-lg -z-1 duration-300 origin-0">Conform Password</label>
+                                        <div className="relative mt-5 font-sourceSerifPro outline ">
+                                            <input type="password" name="username" placeholder=" " className="block w-full pb-2 pl-3 text-lg text-gray-800 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none" value={password} onChange={(e) => setPassword(e.target.value)} />
+                                            <label className="absolute top-0 p-2 text-lg text-gray-500 duration-300 bg-white md:text-lg -z-1 origin-0">Conform Password</label>
                                             <p className="errorMsg">{emailError}</p>
                                         </div>
 
-                                        <button className="font-sourceSerifPro border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full mt-4 py-3 text-4 cursor-pointer rounded-3xl" onClick={handleSignup}>Sign Up</button>
+                                        <button className="w-full py-3 mt-4 text-white bg-indigo-700 border-none cursor-pointer font-sourceSerifPro hover:bg-indigo-600 text-4 rounded-3xl" onClick={handleSignup}>Sign Up</button>
 
 
-                                        <p className="font-sourceSerifPro -mx-4 mt-4 text-right text-gray-700">Have an account?{" "}
+                                        <p className="mt-4 -mx-4 text-right text-gray-700 font-sourceSerifPro">Have an account?{" "}
                                             <span className="text-gray-900 cursor-pointer" onClick={() => setHasAccount(!hasAccount)}>Sign In</span></p>
                                     </>
                                 ) : (
                                     <>
-                                        <button className="font-sourceSerifPro border-none text-white bg-indigo-700 hover:bg-indigo-600 w-full mt-4 py-3 text-4 cursor-pointer rounded-3xl" onClick={handleLogin}>Sign In</button>
+                                        <button className="w-full py-3 mt-4 text-white bg-indigo-700 border-none cursor-pointer font-sourceSerifPro hover:bg-indigo-600 text-4 rounded-3xl" onClick={handleLogin}>Sign In</button>
 
-                                        <p className="font-sourceSerifPro -mx-4 mt-4 text-right text-gray-700">Dont't have an account?{" "}
+                                        <p className="mt-4 -mx-4 text-right text-gray-700 font-sourceSerifPro">Dont't have an account?{" "}
                                             <span className="text-gray-900 cursor-pointer" onClick={() => setHasAccount(!hasAccount)}>Sign Up</span></p>
                                     </>
                                 )}
@@ -110,7 +110,7 @@ const Login: React.FC<Props> = (props) => {
                     </div>
                 </div>
 
-                <motion.div variants={fadeRight} initial="hidden" animate="visible" className="z-10 float-right h-40 w-40 mr-48 -mt-40 bg-blue-600 rounded-3xl md:block sm:hidden"></motion.div>
+                <motion.div variants={fadeRight} initial="hidden" animate="visible" className="z-10 float-right w-40 h-40 mr-48 -mt-40 bg-blue-600 rounded-3xl md:block sm:hidden"></motion.div>
 
             </div>
         </div>

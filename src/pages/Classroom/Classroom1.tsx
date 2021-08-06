@@ -7,7 +7,7 @@ import DiscoverySpaceShuttle from "../../components/Models/DiscoverySpaceShutle"
 import SpaceStation from "../../components/Models/SpaceStation"
 export default function ClassRoom1() {
     return (
-        <div className="pt-20 z-10 bg-homeImg">
+        <div className="z-10 pt-20 bg-homeImg">
             <Earth />
             <SolarSystem />
             <Water />

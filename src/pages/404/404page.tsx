@@ -12,19 +12,19 @@ export default function Page404() {
     return (
         <div className="w-full h-screen bg-gradient-to-b from-page404A to-page404C">
 
-            <div className="stars z-0"></div>
+            <div className="z-0 stars"></div>
 
             <div className="box_astronaut">
-                <img className="object_astronaut w-44 mt-16" alt="Astronaut" src={AstronautImg} />
+                <img width="200px" className="mt-16 object_astronaut" alt="Astronaut" src={AstronautImg} />
             </div>
 
-            <div className="grid lg:grid-cols-2 h-full">
+            <div className="grid h-full lg:grid-cols-2">
 
                 <div className="z-10 md:px-8 sm:px-0">
                     <Link to="/">
-                        <img className="absolute w-80 h-80 md:inset-x md:bottom-36 mt-16" alt="Earth" src={EarthImg} />
+                        <img className="absolute mt-20 w-72 h-72 md:inset-x md:bottom-36" alt="Earth" src={EarthImg} />
                     </Link>
-                    <img className="absolute w-40 h-40 md:top-36 ml-52 mt-12" alt="Moon" src={MoonImg} />
+                    <img className="absolute w-40 h-40 mt-12 md:top-36 ml-52" alt="Moon" src={MoonImg} />
                 </div>
 
                 <div className="font-fontVollkorn text-gray-200 pl-24 pt-32 text-left tracking-wider md:flex md:flex-col md:justify-center">
