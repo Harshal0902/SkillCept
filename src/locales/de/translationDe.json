@@ -1,4 +1,59 @@
 {
   "langName": "German",
-  "homeAbout": "German"
+  "navDropLang": "Deutsche",
+
+  "navLinkHome": "Heim",
+  "navLinkLearn": "Lernen",
+  "navLinkFunZone": "Spaßzone",
+  "navLinkContact": "Kontakt",
+  "navChangeLang": "Sprache ändern",
+  "navSiteDetail": "AR-basierte Webplattform für Studierende",
+
+  "homeAbout": "SkillCept ist eine AR-basierte Webplattform, auf der Schüler mit unterschiedlichem Hintergrund die Website besuchen und mithilfe von 3D-Modellen verschiedene Konzepte erlernen können, was ihr Verständnis erleichtert und beschleunigt. SkillCept kann Schülern helfen, bessere Ergebnisse durch Visualisierung und vollständiges Eintauchen in die Materie zu erzielen",
+  "homeExplore": "Entdecken",
+  "homeOtherFeat": "Andere Eigenschaften",
+  "home3D": "Interaktive 3D-Modelle",
+  "home3Ddetails": "Digitale 3D-Modelle ermöglichen es den Schülern, verschiedene Themen zu visualisieren und abzufragen; sie stärken räumliche Fähigkeiten, erleichtern den Schülern das Erkennen verschiedener im Voraus erlernter Prinzipien auf dem Gebiet und ermutigen die Schüler, über ihre Prozesse und Eigenschaften nachzudenken.",
+  "homeAR": "Lernen mit Augmented Reality",
+  "homeARDetails": "Die relative Nahtlosigkeit digitaler Objekte in der realen Welt von Augmented Reality fördert Interaktivität und Engagement. Es maximiert die Fähigkeit der Schüler, ihre Zeit mit dem Erlernen von Lehrplanfächern zu verbringen, während die Zeit, die für das Erlernen der neuen Technologie aufgewendet wird, minimiert wird.",
+  "homeMultiLang": "In mehreren Sprachen verfügbar",
+  "homeMultiLangDetails": "Die Plattform ist in mehreren Sprachen verfügbar, um ein kulturelles Bewusstsein zu schaffen und zu würdigen, fügt akademischen und pädagogischen Wert hinzu, fördert die Kreativität, eine Anpassung in der Gesellschaft und die Wertschätzung lokaler Sprachen.",
+
+  "learnCLassTitle": "Wählen Sie Ihre Klasse",
+
+  "modelView": "Um das 3D-Modell in AR anzuzeigen, scannen Sie den QR-Code oder klicken Sie auf die Schaltfläche unten.",
+  "modelViewInAR": "In AR anzeigen",
+  "modelEarthTitle": "Erde",
+  "modelEarthDetails": "Die Erde ist der dritte Planet von der Sonne und das einzige astronomische Objekt, von dem bekannt ist, dass es Leben beherbergt und unterstützt. Etwa 29,2% der Erdoberfläche besteht aus Kontinenten und Inseln. Die restlichen 70,8% sind mit Wasser bedeckt, hauptsächlich von Ozeanen, Meeren, Golfen und anderen Salzwasserkörpern, aber auch von Seen, Flüssen und anderem Süßwasser, die zusammen die Hydrosphäre bilden. Ein Großteil der Polarregionen der Erde ist mit Eis bedeckt. Die äußere Schicht der Erde ist in mehrere starre tektonische Platten unterteilt, die über viele Millionen von Jahren über die Oberfläche wandern, während ihr Inneres mit einem festen Eisenkern, einem flüssigen äußeren Kern, der das Erdmagnetfeld erzeugt, und einem konvektiven Mantel, der die Platte antreibt, aktiv bleibt Tektonik.",
+  "modelSolarSystemTitle": "Sonnensystem",
+  "modelSolarSyatemDetails": "Das Sonnensystem ist das gravitativ gebundene System der Sonne und der Objekte, die es entweder direkt oder indirekt umkreisen. Von den Objekten, die die Sonne direkt umkreisen, sind die größten die acht Planeten, der Rest sind kleinere Objekte, die Zwergplaneten und kleine Körper des Sonnensystems. Von den Objekten, die die Sonne indirekt umkreisen – die natürlichen Satelliten – sind zwei größer als der kleinste Planet Merkur. Das Sonnensystem entstand vor 4,6 Milliarden Jahren durch den Gravitationskollaps einer riesigen interstellaren Molekülwolke. Der überwiegende Teil der Masse des Systems befindet sich in der Sonne, während der Großteil der verbleibenden Masse in Jupiter enthalten ist. Die vier kleineren Planeten des inneren Systems, Merkur, Venus, Erde und Mars, sind terrestrische Planeten, die hauptsächlich aus Gestein und Metall bestehen.",
+  "modelWaterTitle": "Wasser (H2O)",
+  "modelWaterDetails": "Wasser (chemische Formel H2O) ist eine anorganische, transparente, geschmacklose, geruchlose und nahezu farblose chemische Substanz, die der Hauptbestandteil der Hydrosphäre der Erde und der Flüssigkeiten aller bekannten lebenden Organismen ist (in denen es als Lösungsmittel fungiert). Es ist lebenswichtig für alle bekannten Lebensformen, obwohl es keine Kalorien oder organische Nährstoffe liefert. Seine chemische Formel H2O zeigt an, dass jedes seiner Moleküle ein Sauerstoff- und zwei Wasserstoffatome enthält, die durch kovalente Bindungen verbunden sind. Die Wasserstoffatome sind in einem Winkel von 104,45° an das Sauerstoffatom gebunden. Wasser ist die Bezeichnung für den flüssigen Zustand von H2O bei Standardbedingungen für Temperatur und Druck.",
+  "modelChemGlassTitle": "Chemielaborausrüstungen",
+  "modelChemGLaddDetails": "Ein Reagenzglas, auch Kulturröhrchen oder Probenröhrchen genannt, ist ein gewöhnliches Laborglas, das aus einem fingerförmigen Glas- oder durchsichtigen Kunststoffröhrchen besteht, das oben offen und unten geschlossen ist. Reagenzgläser werden normalerweise in Spezialgestelle gestellt. In Laborgeräten ist ein Becherglas im Allgemeinen ein zylindrischer Behälter mit flachem Boden. Die meisten haben auch einen kleinen Ausguss (oder Schnabel), um das Ausgießen zu erleichtern, wie im Bild gezeigt.",
+  "modelDiscoverySpaceShuttleTitle": "Space Shuttle-Entdeckung",
+  "modelDiscoverySpaceShuttleDetails": "Space Shuttle Discovery (Orbiter Vehicle Designation: OV-103) ist einer der Orbiter aus dem Space Shuttle-Programm der NASA und der dritte von fünf noch zu bauenden voll funktionsfähigen Orbitern. Seine erste Mission, STS-41-D, flog vom 30. August bis zum 5. September 1984. Über 27 Dienstjahre lang startete und landete es 39 Mal, wobei es mehr Raumflüge als jedes andere Raumfahrzeug bisher umfasste. Die Space-Shuttle-Trägerrakete besteht aus drei Hauptkomponenten: dem Space-Shuttle-Orbiter, einem zentralen Einweg-Treibstofftank und zwei wiederverwendbaren Feststoffraketen.",
+  "modelSpaceStationTitle": "Internationale Raumstation",
+  "modelSpaceStationDetails": "Die Internationale Raumstation (ISS) ist eine modulare Raumstation (bewohnbarer künstlicher Satellit) in einer niedrigen Erdumlaufbahn. Es handelt sich um ein multinationales Gemeinschaftsprojekt, an dem fünf teilnehmende Weltraumorganisationen beteiligt sind: NASA (USA), Roscosmos (Russland), JAXA (Japan), ESA (Europa) und CSA (Kanada). Das Eigentum und die Nutzung der Raumstation wird durch zwischenstaatliche Verträge und Vereinbarungen festgelegt. Die Station dient als Mikrogravitations- und Weltraumforschungslabor, in dem wissenschaftliche Forschungen in Astrobiologie, Astronomie, Meteorologie, Physik und anderen Bereichen durchgeführt werden.",
+
+  "funZoneTitle": "Spaßzone",
+  "funZoneDesc": "Mach eine Pause und hab Spaß",
+
+  "contactTilte": "Reden wir über alles!",
+  "contactHateEmail": "Hassformen? Senden an",
+  "contactTextEmail": "email",
+  "contactInstead": "stattdessen.",
+  "contactFormName": "Dein Name",
+  "contactFormEMail": "E-mail",
+  "contactFormMessage": "Nachricht",
+  "contactFormSendMessage": "Nachricht senden",
+
+  "404Title": "Seite nicht gefunden",
+  "404Lost": "OH OH! Sieht aus, als wärst du im Weltraum verloren",
+  "404Earth": "Klicken Sie auf die Erde, um auf der Startseite zu landen",
+
+  "footerWith": "mit",
+  "footerAnd": "und",
+  "footerBy": "von",
+  "footerMyName": "Herschel Rackwar"
 }

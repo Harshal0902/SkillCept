@@ -42,13 +42,13 @@ export default function ChemGlass() {
 
                             <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide text-black font-fontVollkorn">{t('modelChemGlassTitle')}</h2>
 
-                            <p className="self-center mx-8 text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelChemGLaddDetails')} This work is based on "Chemistry Glassware" (https://sketchfab.com/3d-models/chemistry-glassware-b8594f7dc7e8442dbaaae7a11da4a962) by maxdragonn (https://sketchfab.com/maxdragon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+                            <p className="self-center mx-8 sm:text-sm md:text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelChemGLaddDetails')} This work is based on "Chemistry Glassware" (https://sketchfab.com/3d-models/chemistry-glassware-b8594f7dc7e8442dbaaae7a11da4a962) by maxdragonn (https://sketchfab.com/maxdragon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
                             </p>
 
                             <p className="self-center mx-8 text-xl tracking-wide text-justify text-black font-fontVollkorn">{t('modelView')}</p>
 
                             <div className="grid justify-center grid-cols-1 gap-6 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-                        <img className="flex p-6 text-6xl rounded-xl h-72 w-72" src="https://storage.echoar.xyz/wispy-violet-4999/f23238b9-2cb0-4ab0-8dde-ec1b14a0064e" alt="Earth QR" />
+                        <img className="flex p-6 text-6xl rounded-xl h-72 w-72" src="https://storage.echoar.xyz/wispy-violet-4999/f23238b9-2cb0-4ab0-8dde-ec1b14a0064e" alt="ChemGlass QR" />
                         <a href="https://go.echoar.xyz/GFNG" target="_blank" rel="noreferrer">
                             <button className="h-12 px-8 ml-12 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn lg:mt-36 sm:mt-4 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
                         </a>

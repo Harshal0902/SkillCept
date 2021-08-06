@@ -1,4 +1,59 @@
 {
   "langName": "French",
-  "homeAbout": "French"
+  "navDropLang": "français",
+
+  "navLinkHome": "Domicile",
+  "navLinkLearn": "Apprendre",
+  "navLinkFunZone": "Zone d'amusement",
+  "navLinkContact": "Contact",
+  "navChangeLang": "Changer de langue",
+  "navSiteDetail": "Plateforme Web basée sur la réalité augmentée pour les étudiants",
+
+  "homeAbout": "SkillCept est une plate-forme Web basée sur la RA où les étudiants de tous horizons peuvent visiter le site et apprendre divers concepts à l'aide de modèles 3D, ce qui facilite et accélère leur compréhension. SkillCept peut aider les étudiants à obtenir de meilleurs résultats grâce à la visualisation et à une immersion totale dans le sujet.",
+  "homeExplore": "Explorer",
+  "homeOtherFeat": "Autres caractéristiques",
+  "home3D": "Modèles 3D interactifs",
+  "home3Ddetails": "Les modèles numériques 3D permettent aux étudiants de visualiser et d'interroger divers sujets ; ils renforcent les compétences spatiales, facilitent la reconnaissance par les étudiants de divers principes pré-appris dans le domaine et encouragent les étudiants à réfléchir à leurs processus et propriétés.",
+  "homeAR": "Apprendre avec la réalité augmentée",
+  "homeARDetails": "La relative fluidité des objets numériques de la réalité augmentée dans le monde réel encourage l'interactivité et l'engagement. Il maximise la capacité des étudiants à passer leur temps à apprendre les matières du programme tout en minimisant le temps passé à apprendre à utiliser la nouvelle technologie.",
+  "homeMultiLang": "Disponible en plusieurs langues",
+  "homeMultiLangDetails": "La plate-forme est disponible en plusieurs langues pour la création et l'appréciation de la sensibilisation culturelle, ajoute une valeur académique et éducative, améliore la créativité, un ajustement dans la société et l'appréciation des langues locales.",
+
+  "learnCLassTitle": "Sélectionnez votre classe",
+
+  "modelView": "Pour visualiser le modèle 3D en AR, scannez le code QR ou cliquez sur le bouton ci-dessous.",
+  "modelViewInAR": "Voir en RA",
+  "modelEarthTitle": "Terre",
+  "modelEarthDetails": "La Terre est la troisième planète du Soleil et le seul objet astronomique connu pour abriter et soutenir la vie. Environ 29,2% de la surface de la Terre est constituée de continents et d'îles. Les 70,8% restants sont recouverts d'eau, principalement par les océans, les mers, les golfes et autres masses d'eau salée, mais aussi par les lacs, les rivières et autres eaux douces, qui constituent ensemble l'hydrosphère. Une grande partie des régions polaires de la Terre sont recouvertes de glace. La couche externe de la Terre est divisée en plusieurs plaques tectoniques rigides qui migrent à travers la surface sur plusieurs millions d'années, tandis que son intérieur reste actif avec un noyau interne en fer solide, un noyau externe liquide qui génère le champ magnétique terrestre et un manteau convectif qui entraîne la plaque tectonique.",
+  "modelSolarSystemTitle": "Système solaire",
+  "modelSolarSyatemDetails": "Le système solaire est le système gravitationnellement lié du Soleil et des objets qui l'orbitent, directement ou indirectement. Parmi les objets qui orbitent directement autour du Soleil, les plus gros sont les huit planètes, le reste étant des objets plus petits, les planètes naines et les petits corps du système solaire. Parmi les objets qui orbitent indirectement autour du Soleil - les satellites naturels - deux sont plus gros que la plus petite planète, Mercure. Le système solaire s'est formé il y a 4,6 milliards d'années à partir de l'effondrement gravitationnel d'un nuage moléculaire interstellaire géant. La grande majorité de la masse du système se trouve dans le Soleil, la majorité de la masse restante étant contenue dans Jupiter. Les quatre plus petites planètes du système interne, Mercure, Vénus, la Terre et Mars, sont des planètes telluriques, étant principalement composées de roche et de métal.",
+  "modelWaterTitle": "Eau (H2O)",
+  "modelWaterDetails": "L'eau (formule chimique H2O) est une substance chimique inorganique, transparente, insipide, inodore et presque incolore, qui est le constituant principal de l'hydrosphère terrestre et des fluides de tous les organismes vivants connus (dans lesquels elle agit comme solvant). Il est vital pour toutes les formes de vie connues, même s'il ne fournit ni calories ni nutriments organiques. Sa formule chimique H2O, indique que chacune de ses molécules contient un atome d'oxygène et deux atomes d'hydrogène, reliés par des liaisons covalentes. Les atomes d'hydrogène sont attachés à l'atome d'oxygène sous un angle de 104,45°. L'eau est le nom de l'état liquide de H2O dans des conditions standard de température et de pression.",
+  "modelChemGlassTitle": "Équipement de laboratoire de chimie",
+  "modelChemGLaddDetails": "Un tube à essai, également connu sous le nom de tube de culture ou tube à échantillon, est une pièce courante de verrerie de laboratoire constituée d'une longueur de tube en verre ou en plastique transparent en forme de doigt, ouverte en haut et fermée en bas. Les tubes à essai sont généralement placés dans des racks à usage spécial. Dans les équipements de laboratoire, un bécher est généralement un récipient cylindrique à fond plat. La plupart ont également un petit bec (ou bec) pour faciliter le versement, comme indiqué sur la photo.",
+  "modelDiscoverySpaceShuttleTitle": "Découverte de la navette spatiale",
+  "modelDiscoverySpaceShuttleDetails": "Space Shuttle Discovery (Orbiter Vehicle Designation: OV-103) est l'un des orbiteurs du programme Space Shuttle de la NASA et le troisième des cinq orbiteurs entièrement opérationnels à être construit. Sa première mission, STS-41-D, a volé du 30 août au 5 septembre 1984. Plus de 27 ans de service, il a effectué 39 atterrissages et a effectué plus de vols spatiaux que tout autre vaisseau spatial à ce jour. Le véhicule de lancement de la navette spatiale comprend trois composants principaux : l'orbiteur de la navette spatiale, un réservoir de carburant central à usage unique et deux propulseurs de fusée solide réutilisables.",
+  "modelSpaceStationTitle": "Station spatiale internationale",
+  "modelSpaceStationDetails": "La Station spatiale internationale (ISS) est une station spatiale modulaire (satellite artificiel habitable) en orbite terrestre basse. Il s'agit d'un projet de collaboration multinationale impliquant cinq agences spatiales participantes : NASA (États-Unis), Roscosmos (Russie), JAXA (Japon), ESA (Europe) et CSA (Canada). La propriété et l'utilisation de la station spatiale sont établies par des traités et accords intergouvernementaux. La station sert de laboratoire de recherche sur la microgravité et l'environnement spatial dans lequel des recherches scientifiques sont menées en astrobiologie, astronomie, météorologie, physique et autres domaines.",
+
+  "funZoneTitle": "Zone d'amusement",
+  "funZoneDesc": "Faites une pause et amusez-vous",
+
+  "contactTilte": "Parlons de tout!",
+  "contactHateEmail": "Les formes de haine ? Envoyer un",
+  "contactTextEmail": "email",
+  "contactInstead": "au lieu.",
+  "contactFormName": "votre nom",
+  "contactFormEMail": "E-mail",
+  "contactFormMessage": "Un message",
+  "contactFormSendMessage": "Envoyer le message",
+
+  "404Title": "Page non trouvée",
+  "404Lost": "UH OH ! On dirait que vous êtes perdu dans l'espace",
+  "404Earth": "Cliquez sur Terre pour accéder à la page d'accueil",
+
+  "footerWith": "avec",
+  "footerAnd": "et",
+  "footerBy": "par",
+  "footerMyName": "Herschel Rackwar"
 }

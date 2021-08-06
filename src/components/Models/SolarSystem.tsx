@@ -63,7 +63,7 @@ export default function SolarSystem() {
                             <p className="self-center mx-8 text-xl tracking-wide text-justify text-black font-fontVollkorn">{t('modelView')}</p>
 
                             <div className="grid justify-center grid-cols-1 gap-6 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-                                <img className="flex p-6 text-6xl rounded-xl h-72 w-72" src="https://storage.echoar.xyz/wispy-violet-4999/3a6978a7-360d-422d-b878-7df1c18fb0ef" alt="Earth QR" />
+                                <img className="flex p-6 text-6xl rounded-xl h-72 w-72" src="https://storage.echoar.xyz/wispy-violet-4999/3a6978a7-360d-422d-b878-7df1c18fb0ef" alt="Solar System QR" />
                                 <a href="https://go.echoar.xyz/cBTW" target="_blank" rel="noreferrer">
                                     <button className="h-12 px-8 ml-12 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn lg:mt-36 sm:mt-4 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
                                 </a>

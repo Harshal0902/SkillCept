@@ -103,7 +103,7 @@ export default function Navbar() {
                                                         <div className="py-1">
                                                             <Menu.Item>
                                                                 <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("de")} >
-                                                                    German
+                                                                    Deutsche
                                                                 </div>
                                                             </Menu.Item>
                                                         </div>
@@ -111,7 +111,7 @@ export default function Navbar() {
                                                         <div className="py-1">
                                                             <Menu.Item>
                                                                 <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("ru")} >
-                                                                    Russian
+                                                                    русский
                                                                 </div>
                                                             </Menu.Item>
                                                         </div>
@@ -119,7 +119,7 @@ export default function Navbar() {
                                                         <div className="py-1">
                                                             <Menu.Item>
                                                                 <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("fr")} >
-                                                                    French
+                                                                    français
                                                                 </div>
                                                             </Menu.Item>
                                                         </div>
@@ -127,7 +127,7 @@ export default function Navbar() {
                                                         <div className="py-1">
                                                             <Menu.Item>
                                                                 <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("ja")} >
-                                                                    Japanese
+                                                                    日本
                                                                 </div>
                                                             </Menu.Item>
                                                         </div>
@@ -213,19 +213,19 @@ export default function Navbar() {
                                             </div>
 
                                             <div className="text-base font-medium text-gray-300 font-sourceSerifPro hover:text-gray-200" onClick={changeLang("de")}>
-                                                German
+                                                Deutsche
                                             </div>
 
                                             <div className="text-base font-medium text-gray-300 font-sourceSerifPro hover:text-gray-200" onClick={changeLang("ru")}>
-                                                Russian
+                                                русский
                                             </div>
 
                                             <div className="text-base font-medium text-gray-300 font-sourceSerifPro hover:text-gray-200" onClick={changeLang("fr")}>
-                                                French
+                                                français
                                             </div>
 
                                             <div className="text-base font-medium text-gray-300 font-sourceSerifPro hover:text-gray-200" onClick={changeLang("ja")}>
-                                                Japanese
+                                                日本
                                             </div>
 
                                         </div>

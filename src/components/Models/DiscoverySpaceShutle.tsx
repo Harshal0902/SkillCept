@@ -40,19 +40,19 @@ export default function DiscoverySpaceShuttle() {
                     <div className="mt-5 md:mt-0 md:col-span-2">
                         <div className="md:flex md:flex-col md:justify-center ">
 
-                            <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide text-black font-fontVollkorn">{t('modelWaterTitle')}</h2>
+                            <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide text-black font-fontVollkorn">{t('modelDiscoverySpaceShuttleTitle')}</h2>
 
-                            <p className="self-center mx-8 text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelWaterDetails')}
+                            <p className="self-center mx-8 text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelDiscoverySpaceShuttleDetails')}
                             </p>
 
                             <p className="self-center mx-8 text-xl tracking-wide text-justify text-black font-fontVollkorn">{t('modelView')}</p>
 
                             <div className="grid justify-center grid-cols-1 gap-6 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-                        <img className="flex p-6 text-6xl rounded-xl h-72 w-72" src="https://storage.echoar.xyz/wispy-violet-4999/828c5b27-e6ab-48c8-a9b7-07a810908dd5" alt="Earth QR" />
-                        <a href="https://go.echoar.xyz/uA3y" target="_blank" rel="noreferrer">
-                            <button className="h-12 px-8 ml-12 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn lg:mt-36 sm:mt-4 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-                        </a>
-                    </div>
+                                <img className="flex p-6 text-6xl rounded-xl h-72 w-72" src="https://storage.echoar.xyz/wispy-violet-4999/828c5b27-e6ab-48c8-a9b7-07a810908dd5" alt="Discovery Space Station QR" />
+                                <a href="https://go.echoar.xyz/uA3y" target="_blank" rel="noreferrer">
+                                    <button className="h-12 px-8 ml-12 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn lg:mt-36 sm:mt-4 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
