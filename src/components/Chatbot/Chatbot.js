@@ -22,7 +22,7 @@ const theme = {
 const steps = [
   {
     id: '1',
-    message: 'What is your name?',
+    message: 'Hi, What is your name?',
     trigger: '2',
   },
   {
@@ -32,12 +32,7 @@ const steps = [
   },
   {
     id: '3',
-    message: "Hi {previousValue}, I am Study Bot, how are you feeling today",
-    trigger: "expressions",
-  },
-  {
-    id: "4",
-    message: "Hey! I am Study Bot, how are you feeling today",
+    message: "Hi {previousValue}, I am Study Bot, how are you feeling today?",
     trigger: "expressions",
   },
   {
@@ -70,7 +65,7 @@ const steps = [
   {
     id: "sad",
     message:
-      "I am sorry to here that 😟 . Well i would suggest to read our random Fun-fact or Visit our Yoga Services or Read the latest feeds. You will feel better.🙂",
+      "I am sorry to here that 😟 . Well i would suggest to read our random Fun-fact or visit Fun Zone. You will feel better.🙂",
     trigger: "help",
   },
   {
@@ -104,13 +99,15 @@ const steps = [
   {
     id: "selectServices",
     options: [
-      { value: "Class", label: "Class", trigger: "selectedService" },
+      { value: "Learn Page", label: "Learn", trigger: "selectedService" },
+      { value: "Fun Zone", label: "Fun Zone", trigger: "selectedService" },
+      { value: "Contact Page", label: "Get in Touch", trigger: "selectedService" },
       { value: "goBack", label: "Go back", trigger: "options" },
     ],
   },
   {
     id: "selectedService",
-    message: "opened {previousValue}",
+    message: "opening {previousValue}",
     trigger: "end",
   },
   {
@@ -154,8 +151,14 @@ function Chatbot() {
       case "home":
         history.push("/");
         break;
-      case "Class":
-        history.push("/classes");
+      case "Learn Page":
+        history.push("/learn");
+        break;
+      case "Fun Zone":
+        history.push("/funzone");
+        break;
+      case "Contact Page":
+        history.push("/contact");
         break;
       default:
         break;

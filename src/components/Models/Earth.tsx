@@ -11,7 +11,7 @@ const Model = () => {
     const gltf = useLoader(GLTFLoader, "/earth/scene.gltf");
     return (
         <>
-            <primitive object={gltf.scene} scale={0.017} />
+            <primitive object={gltf.scene} scale={0.012} />
         </>
     );
 };
@@ -40,7 +40,7 @@ export default function Earth() {
 
                 <div className="md:grid md:grid-cols-3 lg:mx-20 sm:mx-4">
 
-                    <div className="h-full w-full px-4 md:col-span-1 lg:block outline-none cursor-pointer">
+                    <div className="w-full h-full px-4 outline-none cursor-pointer md:col-span-1 lg:block">
                         <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
                             <Suspense fallback={null}>
                                 <Model />
@@ -54,19 +54,19 @@ export default function Earth() {
                     <motion.div variants={fade} initial="hidden" animate="visible" className="mt-5 md:mt-0 md:col-span-2">
                         <div className="md:flex md:flex-col md:justify-center ">
 
-                            <h2 className="font-fontVollkorn mx-8 self-center text-black text-5xl font-medium mb-4 tracking-wide">{t('modelEarthTitle')}</h2>
+                            <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide text-black font-fontVollkorn">{t('modelEarthTitle')}</h2>
 
-                            <p className="font-fontVollkorn mx-8 self-center font-medium text-black text-xl text-justify tracking-wide">{t('modelEarthDetails')}
+                            <p className="self-center mx-8 text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelEarthDetails')}
                             </p>
 
-                            {/* <p className="font-fontVollkorn mx-8 self-center text-black text-xl text-justify tracking-wide">{t('modelView')}</p>
+                            <p className="self-center mx-8 text-xl tracking-wide text-justify text-black font-fontVollkorn">{t('modelView')}</p>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 pb-8 justify-center mx-8 lg:grid-cols-2 gap-6">
-                        <img className="flex text-6xl rounded-xl p-6 h-72 w-72" src="https://storage.echoar.xyz/noisy-scene-5023/6357f4df-490c-4851-8f72-3407a46a6c3b" alt="Earth QR" />
-                        <a href="https://go.echoar.xyz/HyD5" target="_blank" rel="noreferrer">
-                            <button className="font-fontVollkorn lg:mt-36 ml-12 sm:mt-4 h-12 bg-red-50 text-white px-8 text-base shadow-sm font-semibold tracking-wider border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full hover:shadow-lg">{t('modelViewInAR')}</button>
-                        </a>
-                    </div> */}
+                            <div className="grid justify-center grid-cols-1 gap-6 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                                <img className="flex p-6 text-6xl rounded-xl h-72 w-72" src="https://storage.echoar.xyz/wispy-violet-4999/90a2a92c-b69d-45d4-8935-9ea307faeb05" alt="Earth QR" />
+                                <a href="https://go.echoar.xyz/J8oi" target="_blank" rel="noreferrer">
+                                    <button className="h-12 px-8 ml-12 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn lg:mt-36 sm:mt-4 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                                </a>
+                            </div>
 
                         </div>
                     </motion.div>
