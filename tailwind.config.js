@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         homeImg: '#DCE4F7',
         ARbg: '#203864',
+        page404A: "#1C1023",
+        page404B: "#B53FA6",
+        page404C: "#351945",
       },
       zIndex: {
         "-1": "-1",

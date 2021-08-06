@@ -22,42 +22,42 @@ export default function Contact() {
     const { t } = useTranslation();
 
     return (
-        <div className="relative overflow-hidden text-gray-100 px-8 py-16 bg-homeImg" >
+        <div className="relative px-8 py-16 overflow-hidden text-gray-100 bg-homeImg" >
 
             <motion.div variants={fadeBottom} initial="hidden" animate="visible"
-                className="relative z-1 max-w-screen-xl mt-16 px-5 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-8 lg:px-8 xl:px-16 py-8 mx-auto bg-white text-gray-900 rounded-xl shadow-xl">
+                className="relative grid max-w-screen-xl grid-cols-1 gap-8 px-5 py-8 mx-auto mt-16 text-gray-900 bg-white shadow-xl z-1 md:grid-cols-2 md:px-8 lg:px-8 xl:px-16 rounded-xl">
                     
                 <div className="flex flex-col justify-between">
                     <div>
-                        <h2 className="font-dancingScript text-4xl lg:text-5xl font-bold tracking-wider leading-tight">{t('contactTilte')}</h2>
-                        <div className="font-sourceSerifPro text-gray-700 mt-4">
+                        <h2 className="text-4xl font-bold leading-tight tracking-wider font-dancingScript lg:text-5xl">{t('contactTilte')}</h2>
+                        <div className="mt-4 text-gray-700 font-sourceSerifPro">
                             {t('contactHateEmail')} <a href="mailto:harshalraikwar07@gmail.com" className="text-blue-800 underline cursor-pointer">{t('contactTextEmail')}</a> {t('contactInstead')}
                         </div>
                     </div>
-                    <div className="mt-2 lg:p-12 sm:p-1 text-center">
+                    <div className="mt-2 text-center lg:p-12 sm:p-1">
                         <img className="w-full" src={ContacImg} alt="Send message" />
                     </div>
                 </div>
 
                 <form action="https://formspree.io/f/xbjqarrq" method="POST" className="lg:px-12 sm:px-1">
                     <div>
-                        <span className="font-sourceSerifPro uppercase tracking-wide text-sm text-gray-600 font-bold">{t('contactFormName')}</span>
-                        <input className="font-sourceSerifPro w-full bg-homeImg text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="Sender's Name" required
+                        <span className="text-sm font-bold tracking-wide text-gray-600 uppercase font-sourceSerifPro">{t('contactFormName')}</span>
+                        <input className="w-full p-3 mt-2 text-gray-900 rounded-lg font-sourceSerifPro bg-homeImg focus:outline-none focus:shadow-outline" type="text" name="Sender's Name" required
                             placeholder="" />
                     </div>
                     <div className="mt-8">
-                        <span className="font-sourceSerifPro uppercase tracking-wide text-sm text-gray-600 font-bold">{t('contactFormEMail')}</span>
-                        <input className="font-sourceSerifPro w-full bg-homeImg text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" required
+                        <span className="text-sm font-bold tracking-wide text-gray-600 uppercase font-sourceSerifPro">{t('contactFormEMail')}</span>
+                        <input className="w-full p-3 mt-2 text-gray-900 rounded-lg font-sourceSerifPro bg-homeImg focus:outline-none focus:shadow-outline" required
                             type="email" name="Sender's Email" />
                     </div>
                     <div className="mt-8">
-                        <span className="font-sourceSerifPro uppercase text-sm tracking-wide text-gray-600 font-bold">{t('contactFormMessage')}</span>
+                        <span className="text-sm font-bold tracking-wide text-gray-600 uppercase font-sourceSerifPro">{t('contactFormMessage')}</span>
                         <textarea
-                            className="font-sourceSerifPro w-full h-36 bg-homeImg text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" required name="Sender's Message"></textarea>
+                            className="w-full p-3 mt-2 text-gray-900 rounded-lg font-sourceSerifPro h-36 bg-homeImg focus:outline-none focus:shadow-outline" required name="Sender's Message"></textarea>
                     </div>
                     <div className="mt-8">
 
-                        <button className="font-sourceSerifPro uppercase w-full bg-indigo-500 text-white font-bold py-3 px-4 border-b-4 hover:border-b-2 border-gray-500 focus:border-gray-400 rounded-full">
+                        <button className="w-full px-4 py-3 font-bold text-white uppercase bg-indigo-500 border-b-4 border-gray-500 rounded-full font-sourceSerifPro hover:border-b-2 focus:border-gray-400">
                             {t('contactFormSendMessage')}
                         </button>
 

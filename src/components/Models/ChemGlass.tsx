@@ -10,7 +10,7 @@ const Model = () => {
     const gltf = useLoader(GLTFLoader, "/chemistry_glassware/scene.gltf");
     return (
         <>
-            <primitive object={gltf.scene} scale={0.3} />
+            <primitive object={gltf.scene} scale={0.2} />
         </>
     );
 };
@@ -24,7 +24,7 @@ export default function ChemGlass() {
 
                 <div className="md:grid md:grid-cols-3 lg:mx-20 sm:mx-4">
 
-                    <div className="h-full w-full px-4 md:col-span-1 lg:block outline-none cursor-pointer">
+                    <div className="w-full h-full px-4 outline-none cursor-pointer md:col-span-1 lg:block">
                         <Canvas shadows dpr={[1, 2]} >
                             <ambientLight intensity={0.7} />
                             <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
@@ -40,19 +40,19 @@ export default function ChemGlass() {
                     <div className="mt-5 md:mt-0 md:col-span-2">
                         <div className="md:flex md:flex-col md:justify-center ">
 
-                            <h2 className="font-fontVollkorn mx-8 self-center text-black text-5xl font-medium mb-4 tracking-wide">{t('modelChemGlassTitle')}</h2>
+                            <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide text-black font-fontVollkorn">{t('modelChemGlassTitle')}</h2>
 
-                            <p className="font-fontVollkorn mx-8 self-center text-black font-medium text-xl text-justify tracking-wide">{t('modelChemGLaddDetails')} This work is based on "Chemistry Glassware" (https://sketchfab.com/3d-models/chemistry-glassware-b8594f7dc7e8442dbaaae7a11da4a962) by maxdragonn (https://sketchfab.com/maxdragon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+                            <p className="self-center mx-8 text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelChemGLaddDetails')} This work is based on "Chemistry Glassware" (https://sketchfab.com/3d-models/chemistry-glassware-b8594f7dc7e8442dbaaae7a11da4a962) by maxdragonn (https://sketchfab.com/maxdragon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
                             </p>
 
-                            {/* <p className="font-fontVollkorn mx-8 self-center text-black text-xl text-justify tracking-wide">{t('modelView')}</p>
+                            <p className="self-center mx-8 text-xl tracking-wide text-justify text-black font-fontVollkorn">{t('modelView')}</p>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 pb-8 justify-center mx-8 lg:grid-cols-2 gap-6">
-                        <img className="flex text-6xl rounded-xl p-6 h-72 w-72" src="https://storage.echoar.xyz/noisy-scene-5023/6357f4df-490c-4851-8f72-3407a46a6c3b" alt="Earth QR" />
-                        <a href="https://go.echoar.xyz/HyD5" target="_blank" rel="noreferrer">
-                            <button className="font-fontVollkorn lg:mt-36 ml-12 sm:mt-4 h-12 bg-red-50 text-white px-8 text-base shadow-sm font-semibold tracking-wider border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full hover:shadow-lg">{t('modelViewInAR')}</button>
+                            <div className="grid justify-center grid-cols-1 gap-6 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                        <img className="flex p-6 text-6xl rounded-xl h-72 w-72" src="https://storage.echoar.xyz/wispy-violet-4999/f23238b9-2cb0-4ab0-8dde-ec1b14a0064e" alt="Earth QR" />
+                        <a href="https://go.echoar.xyz/GFNG" target="_blank" rel="noreferrer">
+                            <button className="h-12 px-8 ml-12 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn lg:mt-36 sm:mt-4 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
                         </a>
-                    </div> */}
+                    </div>
 
                         </div>
                     </div>
