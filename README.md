@@ -6,12 +6,12 @@ SkillCept is an AR-based web platform where students from any background can vis
 
 ## Live demo
 
-The site is deployed throught Vercel, which you can view from [here]()
+The site is deployed throught Vercel, which you can view from [here](http://skillcept.vercel.app)
 
 ## Demo video
 
 You can checkout the demo video on youtube by clicking on the thumbnail below.
-<a href="">
+<a href="https://youtu.be/Vb3d47SMMwg">
 <img src="https://user-images.githubusercontent.com/64153988/128834005-92cfab38-c2dd-4dc9-9409-fa4bd062b7dd.png" width="600px">  
 </a>
 
