@@ -83,13 +83,6 @@ const Login: React.FC<Props> = (props) => {
                             <div className="my-3 btnContainer">
                                 {hasAccount ? (
                                     <>
-
-                                        <div className="relative mt-5 font-sourceSerifPro outline ">
-                                            <input type="password" name="username" placeholder=" " className="block w-full pb-2 pl-3 text-lg text-gray-800 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none" value={password} onChange={(e) => setPassword(e.target.value)} />
-                                            <label className="absolute top-0 p-2 text-lg text-gray-500 duration-300 bg-white md:text-lg -z-1 origin-0">Conform Password</label>
-                                            <p className="errorMsg">{emailError}</p>
-                                        </div>
-
                                         <button className="w-full py-3 mt-4 text-white bg-indigo-700 border-none cursor-pointer font-sourceSerifPro hover:bg-indigo-600 text-4 rounded-3xl" onClick={handleSignup}>Sign Up</button>
 
 
