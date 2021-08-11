@@ -29,7 +29,7 @@ interface SquareProps {
 
 const Square: React.FC<SquareProps> = props => {
   return (
-    <button className="bg-white float-left text-4xl font-base border-solid border border-black leading-8 h-24 w-24 text-center" onClick={props.onClick}>
+    <button className="float-left w-24 h-24 text-4xl leading-8 text-center bg-white border border-black border-solid font-base" onClick={props.onClick}>
       {props.value}
     </button>
   );
@@ -108,7 +108,7 @@ const Game: React.FC = () => {
   }
 
   return (
-    <div className="grid place-items-center bg-homeImg h-screen">
+    <div className="grid h-screen place-items-center bg-homeImg">
       <div className="mt-28">
         <Board
           squares={current.squares}
@@ -116,7 +116,7 @@ const Game: React.FC = () => {
         />
       </div>
       <div className="">
-        <div className="mb-8 font-sourceSerifPro text-2xl">{status}</div>
+        <div className="mb-8 text-2xl font-sourceSerifPro">{status}</div>
       </div>
     </div>
   );

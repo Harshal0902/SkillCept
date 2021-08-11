@@ -11,7 +11,7 @@ const Model = () => {
     const gltf = useLoader(GLTFLoader, "/earth/scene.gltf");
     return (
         <>
-            <primitive object={gltf.scene} scale={0.012} />
+            <primitive object={gltf.scene} scale={0.01} />
         </>
     );
 };

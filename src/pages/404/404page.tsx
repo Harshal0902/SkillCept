@@ -27,7 +27,7 @@ export default function Page404() {
                     <img className="absolute w-40 h-40 mt-12 md:top-36 ml-52" alt="Moon" src={MoonImg} />
                 </div>
 
-                <div className="pl-16 tracking-wider text-left text-white pt-48 font-fontVollkorn md:flex md:flex-col md:justify-center">
+                <div className="pt-48 pl-16 tracking-wider text-left text-white font-fontVollkorn md:flex md:flex-col md:justify-center">
                     <div className="text-6xl md:text-9xl">404</div>
                     <div className="text-2xl md:text-5xl">{t('404Title')}</div>
                     <div className="text-xl md:text-3xl">{t('404Lost')}</div>

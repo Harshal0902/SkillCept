@@ -65,8 +65,8 @@ export default function Home() {
 
                             <p className="self-center text-xl tracking-wide text-justify font-sourceSerifPro">{t('homeAbout')}</p>
 
-                            <Link to="learn">
-                                <button className="p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-sourceSerifPro md:w-1/3 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg ">{t('homeExplore')}</button>
+                            <Link to="learn" className="md:w-1/3">
+                                <button className="p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-sourceSerifPro md:w-full bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg ">{t('homeExplore')}</button>
                             </Link>
 
                         </motion.div>

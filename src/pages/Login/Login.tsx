@@ -5,16 +5,15 @@ import Study from "../../assets/study.svg"
 interface Props {
     email: string;
     setEmail: any;
-    password: any;
+    password: string;
     setPassword: any;
-    confPassword: any;
+    confPassword: string;
     handleLogin: any;
     handleSignup: any;
-    hasAccount: any;
+    hasAccount: string;
     setHasAccount: any;
-    emailError: any;
-    passwordError: any;
-    lang: any;
+    emailError: string;
+    passwordError: string;
 }
 
 const Login: React.FC<Props> = (props) => {

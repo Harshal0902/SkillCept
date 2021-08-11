@@ -42,7 +42,7 @@ export default function SpaceStation() {
 
                             <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide text-black font-fontVollkorn">{t('modelSpaceStationTitle')}</h2>
 
-                            <p className="self-center mx-8 sm:text-sm md:text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelSpaceStationDetails')} This work is based on "International Space Station - ISS - 3D" (https://sketchfab.com/3d-models/international-space-station-iss-3d-a40e6888dcaa4e0297dd27d29e475151) by arnaudbanner (https://sketchfab.com/arnaudbanner) licensed under CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
+                            <p className="self-center mx-8 font-medium tracking-wide text-justify text-black sm:text-sm md:text-xl font-fontVollkorn">{t('modelSpaceStationDetails')} This work is based on "International Space Station - ISS - 3D" (https://sketchfab.com/3d-models/international-space-station-iss-3d-a40e6888dcaa4e0297dd27d29e475151) by arnaudbanner (https://sketchfab.com/arnaudbanner) licensed under CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
                             </p>
 
                             <p className="self-center mx-8 text-xl tracking-wide text-justify text-black font-fontVollkorn">{t('modelView')}</p>
