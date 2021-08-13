@@ -42,7 +42,7 @@ export default function ChemGlass() {
 
                             <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide text-black font-fontVollkorn">{t('modelChemGlassTitle')}</h2>
 
-                            <p className="self-center mx-8 font-medium tracking-wide text-justify text-black sm:text-sm md:text-xl font-fontVollkorn">{t('modelChemGLaddDetails')} This work is based on "Chemistry Glassware" (https://sketchfab.com/3d-models/chemistry-glassware-b8594f7dc7e8442dbaaae7a11da4a962) by maxdragonn (https://sketchfab.com/maxdragon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+                            <p className="self-center mx-8 sm:text-sm md:text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelChemGLaddDetails')} This work is based on "Chemistry Glassware" (https://sketchfab.com/3d-models/chemistry-glassware-b8594f7dc7e8442dbaaae7a11da4a962) by maxdragonn (https://sketchfab.com/maxdragon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
                             </p>
 
                             <p className="self-center mx-8 text-xl tracking-wide text-justify text-black font-fontVollkorn">{t('modelView')}</p>

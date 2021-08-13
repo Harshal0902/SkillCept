@@ -60,7 +60,7 @@ export default function FunZone() {
     const { t } = useTranslation();
 
     return (
-        <div className="h-screen pt-16 bg-homeImg">
+        <div className="pt-16 bg-homeImg h-screen">
             <motion.div variants={fadeLogo} initial="hidden" animate="visible" className="grid w-full py-10 place-items-center">
                 <h1 className="pb-2 text-5xl font-semibold tracking-wide font-dancingScript lg:text-6xl">
                 {t('funZoneTitle')}
@@ -68,16 +68,16 @@ export default function FunZone() {
                 <div className="inline-flex h-1 bg-indigo-500 rounded-full w-44"></div>
             </motion.div>
 
-            <motion.div variants={fadeDesc} initial="hidden" animate="visible" className="text-2xl italic font-sourceSerifPro md:pl-12 sm:pl-10">{t('funZoneDesc')}</motion.div>
+            <motion.div variants={fadeDesc} initial="hidden" animate="visible" className="font-sourceSerifPro italic md:pl-12 sm:pl-10 text-2xl">{t('funZoneDesc')}</motion.div>
 
             <motion.div variants={fadeBottom} initial="hidden" animate="visible" className="flex flex-wrap justify-around w-full px-16">
 
                 <Link to='/tictactoe'>
                     <motion.div variants={fadeItem} className="m-8">
-                        <div className="transition duration-500 transform cursor-pointer w-72 h-72 hover:scale-105">
-                            <img className="pb-8 bg-white border-4 border-blue-600 rounded-lg" alt="" src=
+                        <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
+                            <img className="pb-8 border-4 bg-white border-blue-600 rounded-lg" alt="" src=
                                 {TicTacToeImg} />
-                             <div className="grid mx-1 -mt-8 text-xl font-semibold text-gray-900 place-content-center bg-homeImg font-sourceSerifPro">Tic Tac Toe Game</div>
+                             <div className="grid place-content-center mx-1 -mt-8 text-xl font-semibold text-gray-900 bg-homeImg font-sourceSerifPro">Tic Tac Toe Game</div>
                         </div>
                     </motion.div>
                 </Link>

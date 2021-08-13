@@ -27,8 +27,8 @@ export default function Navbar() {
             <Popover className="relative z-10 bg-gray-900">
                 {({ open }) => (
                     <div className="">
-                        <div className="px-4 mx-auto max-w-7xl sm:px-6">
-                            <div className="flex items-center justify-between py-3 border-b-2 md:justify-start md:space-x-10">
+                        <div className="px-4  mx-auto max-w-7xl sm:px-6">
+                            <div className="flex items-center justify-between py-3 border-b-2 md:justify-start md:space-x-8">
                                 <div className="flex justify-start lg:w-0 lg:flex-1">
                                     <Link to='/' className="w-auto text-5xl text-white no-underline cursor-pointer font-dancingScript">SkillCept</Link>
                                 </div>
@@ -38,9 +38,10 @@ export default function Navbar() {
                                         <MenuAlt3Icon className="h-7 w-7 focus:outline-none" aria-hidden="true" />
                                     </Popover.Button>
                                 </div>
-                                <Popover.Group as="nav" className="hidden md:flex md:space-x-0 lg:space-x-5">
 
-                                    <Link to='/' className="px-3 py-2 font-serif text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">{t('navLinkHome')}</Link>
+                                <Popover.Group as="nav" className="hidden md:flex md:space-x-0 lg:space-x-3">
+
+                                    <Link to='/' className="px-3 py-2 mx-2 font-serif text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">{t('navLinkHome')}</Link>
 
                                     <Link to='/learn' className="px-3 py-2 font-serif text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">{t('navLinkLearn')}</Link>
 
@@ -48,101 +49,82 @@ export default function Navbar() {
 
                                     <Link to='/contact' className="px-3 py-2 font-serif text-xl font-medium text-gray-300 no-underline rounded-md font-sourceSerifPro hover:bg-gray-700 hover:text-white">{t('navLinkContact')}</Link>
 
-                                </Popover.Group>
-                                <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-
-                                    {/* Change language */}
-                                    <Menu>
-                                        {({ open }) => (
-                                            <>
-                                                <span className="rounded-md shadow-sm">
-                                                    <Menu.Button className="inline-flex justify-center w-full p-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md font-sourceSerifPro hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
-                                                        <span>{t('navChangeLang')}</span>
-
-                                                        <svg
-                                                            className="w-5 h-5 ml-2 -mr-1"
-                                                            viewBox="0 0 20 20"
-                                                            fill="currentColor"
-                                                        >
-                                                            <path
-                                                                fillRule="evenodd"
-                                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                                clipRule="evenodd"
-                                                            />
-                                                        </svg>
-                                                    </Menu.Button>
-                                                </span>
-
-                                                <Transition
-                                                    show={open}
-                                                    enter="transition ease-out duration-100"
-                                                    enterFrom="transform opacity-0 scale-95"
-                                                    enterTo="transform opacity-100 scale-100"
-                                                    leave="transition ease-in duration-75"
-                                                    leaveFrom="transform opacity-100 scale-100"
-                                                    leaveTo="transform opacity-0 scale-95"
+                                    <Menu as="div" className="relative inline-block text-left">
+                                        <div>
+                                            <Menu.Button className="my-1 inline-flex justify-center w-full p-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md font-sourceSerifPro hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+                                                {t('navChangeLang')}
+                                                <svg
+                                                    className="w-5 h-5"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
                                                 >
-                                                    <Menu.Items static className="absolute w-40 mt-5 -ml-40 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none font-sourceSerifPro">
+                                                    <path
+                                                        fillRule="evenodd"
+                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                        clipRule="evenodd"
+                                                    />
+                                                </svg>
+                                            </Menu.Button>
+                                        </div>
 
-                                                        <div className="py-1">
-                                                            <Menu.Item>
-                                                                <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("en")} >
-                                                                    English
-                                                                </div>
-                                                            </Menu.Item>
-                                                        </div>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition ease-out duration-100"
+                                            enterFrom="transform opacity-0 scale-95"
+                                            enterTo="transform opacity-100 scale-100"
+                                            leave="transition ease-in duration-75"
+                                            leaveFrom="transform opacity-100 scale-100"
+                                            leaveTo="transform opacity-0 scale-95"
+                                        >
+                                            <Menu.Items static className="origin-top-right absolute right-0 w-40 rounded-md shadow-lg bg-white ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none font-sourceSerifPro">
 
-                                                        <div className="py-1">
-                                                            <Menu.Item>
-                                                                <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("hi")} >
-                                                                    हिंदी
-                                                                </div>
-                                                            </Menu.Item>
-                                                        </div>
+                                                <Menu.Item>
+                                                    <div className="w-full px-14 py-3 text-sm cursor-pointer" onClick={changeLang("en")} >
+                                                        English
+                                                    </div>
+                                                </Menu.Item>
 
-                                                        <div className="py-1">
-                                                            <Menu.Item>
-                                                                <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("de")} >
-                                                                    Deutsche
-                                                                </div>
-                                                            </Menu.Item>
-                                                        </div>
+                                                <Menu.Item>
+                                                    <div className="w-full px-16 py-3 text-sm cursor-pointer" onClick={changeLang("hi")} >
+                                                        हिंदी
+                                                    </div>
+                                                </Menu.Item>
 
-                                                        <div className="py-1">
-                                                            <Menu.Item>
-                                                                <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("ru")} >
-                                                                    русский
-                                                                </div>
-                                                            </Menu.Item>
-                                                        </div>
+                                                <Menu.Item>
+                                                    <div className="w-full px-12 py-3 text-sm cursor-pointer" onClick={changeLang("de")} >
+                                                        Deutsche
+                                                    </div>
+                                                </Menu.Item>
 
-                                                        <div className="py-1">
-                                                            <Menu.Item>
-                                                                <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("fr")} >
-                                                                    français
-                                                                </div>
-                                                            </Menu.Item>
-                                                        </div>
+                                                <Menu.Item>
+                                                    <div className="w-full px-12 py-3 text-sm cursor-pointer" onClick={changeLang("ru")} >
+                                                        русский
+                                                    </div>
+                                                </Menu.Item>
 
-                                                        <div className="py-1">
-                                                            <Menu.Item>
-                                                                <div className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer " onClick={changeLang("ja")} >
-                                                                    日本
-                                                                </div>
-                                                            </Menu.Item>
-                                                        </div>
+                                                <Menu.Item>
+                                                    <div className="w-full px-12 py-3 text-sm cursor-pointer" onClick={changeLang("fr")} >
+                                                        français
+                                                    </div>
+                                                </Menu.Item>
 
-                                                    </Menu.Items>
-                                                </Transition>
-                                            </>
-                                        )}
+                                                <Menu.Item>
+                                                    <div className="w-full px-14 py-3 text-sm cursor-pointer" onClick={changeLang("ja")} >
+                                                        日本
+                                                    </div>
+                                                </Menu.Item>
+
+                                            </Menu.Items>
+                                        </Transition>
                                     </Menu>
 
-                                    <div className='pl-4 cursor-pointer nav-links' onClick={handleLogout}>
+                                    <div className='pl-2 mt-1 cursor-pointer nav-links' onClick={handleLogout}>
                                         <img src={LogoutIcon} height="40" width="40" className="text-white " alt="logout" aria-hidden="true" />
                                     </div>
 
-                                </div>
+                                </Popover.Group>
+
+                                {/* </div> */}
                             </div>
                         </div>
 
