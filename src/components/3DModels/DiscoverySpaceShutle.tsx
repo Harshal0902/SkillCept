@@ -31,7 +31,7 @@ export default function DiscoverySpaceShuttle() {
                             <Suspense fallback={null}>
                                 <Model />
                                 <Environment preset="city" />
-                                <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
+                                <ContactShadows rotation-x={Math.PI / 2} position={[0, 0.2, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                             </Suspense>
                             <OrbitControls autoRotate />
                         </Canvas>

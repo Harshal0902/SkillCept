@@ -6,7 +6,6 @@ import { useLoader } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { motion } from "framer-motion"
-import "../../i18n"
 import { useTranslation } from 'react-i18next'
 
 const Model = () => {
@@ -57,20 +56,19 @@ export default function SolarSystem() {
                     <motion.div variants={fade} initial="hidden" animate="visible" className="mt-5 md:mt-0 md:col-span-2">
                         <div className="md:flex md:flex-col md:justify-center ">
 
-                            <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide text-black font-fontVollkorn">{t('modelSolarSystemTitle')}</h2>
+                            <h2 className="self-center mx-8 mb-4 text-5xl font-medium tracking-wide font-fontVollkorn">{t('modelSolarSystemTitle')}</h2>
 
-                            <p className="self-center mx-8 text-xl font-medium tracking-wide text-justify text-black font-fontVollkorn">{t('modelSolarSyatemDetails')}
+                            <p className="self-center mx-8 text-xl font-medium tracking-wide text-justify font-fontVollkorn">{t('modelSolarSyatemDetails')}
                             </p>
 
-                            {/* Modal */}
-                            <Link to="/exploresolarsystem" className="md:w-1/3">
+                            <Link to="/solarsystemexplore" className="md:w-1/3">
                                 <button
                                     className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-64 my-4 ml-8 py-4 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 ease-linear transition-all duration-150 font-fontVollkorn"
                                     type="button"
                                 >{t('homeExplore')}</button>
                             </Link>
 
-                            <p className="self-center mx-8 text-xl tracking-wide text-justify text-black font-fontVollkorn">{t('modelView')}</p>
+                            <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
                             <div className="grid justify-center grid-cols-1 gap-6 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
                                 <img className="flex p-6 text-6xl rounded-xl h-64 w-64" src="https://storage.echoar.xyz/wispy-violet-4999/25c8b0c7-d505-419a-9d20-5a443d0e67a0" alt="Solar System QR" />

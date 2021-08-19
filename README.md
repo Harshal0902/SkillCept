@@ -6,7 +6,7 @@ SkillCept is an AR-based web platform where students from any background can vis
 
 ## Live demo
 
-The site is deployed throught Vercel, which you can view from [here](http://skillcept.vercel.app)
+The site is deployed through Vercel, which you can view from [here](http://skillcept.vercel.app)
 
 ## Demo video
 
@@ -46,7 +46,7 @@ You can checkout the demo video on youtube by clicking on the thumbnail below.
 Preloader: Codepen by [Aaron Iker](https://codepen.io/aaroniker/pen/wvvKKeg)  
 3D Models: [sketchfab.com](https://sketchfab.com)
 
-## 📝 My to-do
+## 📋 My to-do
 
 - [ ] Adding more AR and 3D model for all classes
 - [ ] Adding Virtual Reality support
@@ -69,7 +69,7 @@ npm install
 npm start
 ```
 
-## 🖼️ Some glimps of the site
+## 🖼️ Some glimpse of the site
 
 Home page
 ![home](https://user-images.githubusercontent.com/64153988/128831020-4a612d8f-b029-4058-8fa4-fe1312f5fb11.png)
@@ -97,5 +97,9 @@ Feel free to [open an issue](https://github.com/Harshal0902/SkillCept/issues) on
 ## ⭐ Feature Request
 
 Feel free to [Open an issue](https://github.com/Harshal0902/SkillCept/issues) on GitHub to request any additional features you might need for your use case.
+
+## 📜 License
+
+This software is open source, licensed under the [MIT License](https://github.com/Harshal0902/SkillCept/blob/main/LICENSE).
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Harshal0902)
