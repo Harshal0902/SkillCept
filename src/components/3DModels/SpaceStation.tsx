@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
 import { Environment, OrbitControls, ContactShadows } from "@react-three/drei";
@@ -46,13 +45,6 @@ export default function SpaceStation() {
                             <p className="self-center mx-8 sm:text-sm md:text-xl font-medium tracking-wide text-justify font-fontVollkorn">{t('modelSpaceStationDetails')} <a target="blank" href="https://sketchfab.com/3d-models/international-space-station-iss-3d-a40e6888dcaa4e0297dd27d29e475151">International Space Station - ISS - 3D</a> made by <a href="https://sketchfab.com/arnaudbanner" target="blank" >arnaudbanner </a>
                                 licensed under <a href="http://creativecommons.org/licenses/by-nd/4.0/" target="blank">CC-BY-ND-4.0</a>
                             </p>
-
-                            <Link to="/explorespacestation" className="md:w-1/3">
-                                <button
-                                    className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-64 my-4 ml-8 py-4 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 ease-linear transition-all duration-150 font-fontVollkorn"
-                                    type="button"
-                                >{t('homeExplore')}</button>
-                            </Link>
 
                             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 

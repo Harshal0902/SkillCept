@@ -49,12 +49,12 @@ export default function SpaceStation() {
                                 licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/" target="blank">CC0-1.0</a>
                             </p>
 
-                            <Link to="explorespacestation" className="md:w-1/3">
+                            {/* <Link to="explorespacestation" className="md:w-1/3">
                                 <button
                                     className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-64 my-4 ml-8 py-4 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 ease-linear transition-all duration-150 font-fontVollkorn"
                                     type="button"
                                 >{t('homeExplore')}</button>
-                            </Link>
+                            </Link> */}
 
                             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
