@@ -6,6 +6,7 @@ import ChemGlass from "../../components/3DModels/ChemGlass"
 import DiscoverySpaceShuttle from "../../components/3DModels/DiscoverySpaceShutle"
 import Perseverance from "../../components/3DModels/Perseverance"
 import SpaceStation from "../../components/3DModels/SpaceStation"
+
 export default function ClassRoom1() {
     return (
         <div className="z-10 pt-20 bg-ARbg">
