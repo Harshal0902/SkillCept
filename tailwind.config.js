@@ -1,32 +1,31 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      animation: {
-        'spin-slow': 'spin 5s linear infinite',
-      },
       colors: {
-        homeImg: '#DCE4F7',
-        ARbg: '#80ffd4',
-        page404A: "#1C1023",
-        page404B: "#B53FA6",
-        page404C: "#351945",
+        primary: "#1B2431",
+        secondary: "#016795",
+        tertiary: "#1E488F",
       },
       zIndex: {
         "-1": "-1",
       },
+      spacing: {
+        '128': '40rem',
+        '256': '80rem',
+      },
+      'animation': {
+        'spin-slow': 'spin 12s linear infinite',
+      },
     },
     fontFamily: {
-      'sans': ['Helvetica', 'Arial', 'sans-serif'],
-      'dancingScript': ['Dancing Script'],
-      'sourceSerifPro': ['Source Serif Pro'],
-      "fontVollkorn": ['Vollkorn'],
-      'body': ['Open Sans'],
+      'montserrat': ['Montserrat'],
+      'sansSerif': ['Source Sans Pro', 'sans-serif']
     }
-  },
-  variants: {
-    borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
   },
   plugins: [],
 }

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Segmentation of Lungs and Spinal Column
+* source:	https://sketchfab.com/3d-models/segmentation-of-lungs-and-spinal-column-53341767b4a44521b01a42ff8846b089
+* author:	gabrielyuen (https://sketchfab.com/gabrielyuen)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Segmentation of Lungs and Spinal Column" (https://sketchfab.com/3d-models/segmentation-of-lungs-and-spinal-column-53341767b4a44521b01a42ff8846b089) by gabrielyuen (https://sketchfab.com/gabrielyuen) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
