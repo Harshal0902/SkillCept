@@ -156,8 +156,4 @@ Feel free to [open an issue](https://github.com/Harshal0902/SkillCept/issues) on
 
 Feel free to [Open an issue](https://github.com/Harshal0902/SkillCept/issues) on GitHub to request any additional features you might need for your use case.
 
-## 📜 License
-
-This software is open-source, licensed under the [MIT License](https://github.com/Harshal0902/SkillCept/blob/main/LICENSE).
-
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Harshal0902)
