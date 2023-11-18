@@ -10,9 +10,9 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
-    "@react-spring/three": "^9.4.3",
-    "@react-three/drei": "^7.22.6",
-    "@react-three/fiber": "^7.0.26",
+    "@react-spring/three": "^9.7.3",
+    "@react-three/drei": "^9.88.16",
+    "@react-three/fiber": "^8.15.11",
     "@react-three/xr": "^5.7.1",
     "framer-motion": "^3.10.3",
     "next": "12.0.10",
